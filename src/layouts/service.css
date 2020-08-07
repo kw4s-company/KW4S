@@ -1,0 +1,834 @@
+
+.serv-btn {
+  
+    background-color: transparent;
+    border-radius: 100%;
+    
+    
+    
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+
+    
+    
+    
+   
+  }
+  .serv-btn img {
+      width: 4em;
+      height:4em;
+      
+      border-radius: 100%;
+  }
+  .serv-btn p {
+      position: absolute;
+      display: flex;
+  }
+  .service-text {
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    
+    text-align: right;
+    z-index: 4;
+    position: absolute;
+    font-size: calc(0.2em + 0.7vw);
+    scrollbar-width: thin;
+    scrollbar-color: rgba(21, 192, 149, 0.904) rgba(11, 204, 140, 0.137);
+    
+  }
+  .service-row {
+    display: block;
+    margin-top: 3em;
+    margin-bottom: -2%;
+    
+    max-height: inherit;
+    
+}
+
+ 
+  
+  .btn-eclips {
+    background:radial-gradient(rgba(255, 255, 255, 0.062) 50%,rgba(124, 121, 121, 0.192) 80%),url("../images/btn-bg.png");
+    background-size: cover;
+    padding: 0.2em;
+    border: none;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px rgba(58, 55, 55, 0.507);
+    display: inline-block;
+    transition: ease 0.9s all;
+    color: rgb(58, 53, 53);
+    font-size: 1.4em;
+    
+
+}
+  .btn-eclips:hover {
+    background:radial-gradient(rgba(255, 255, 255, 0.767) 20%,rgba(124, 121, 121, 0.082) 80%),url("../images/btn-bg.png");
+    background-size: cover;
+    transition: ease 0.2s all;
+    color: rgb(61, 58, 58);
+    transform: scale(1.1);
+    
+  }
+
+  .btn-eclips:active{
+    box-shadow: 3px 3px 7px rgba(58, 55, 55, 0.507);
+    color: rgb(61, 58, 58);
+    transform: scale(0.97);
+    
+    
+
+  }
+  .btn-eclips:focus {
+      outline: none;
+  }
+ 
+
+  .btn-dot {
+      background: url(../images/btn-dot2.png);
+      background-size: cover;
+      border: none;
+      border-radius: 100%;
+      margin-left:5em;
+      margin-right: 5em;
+      width: 3em;
+      height: 3em;
+      pointer-events: none;
+      opacity: 0.9;
+
+  }
+
+  .btn1r1-dot {
+    margin-left:calc(2em + 20vw);
+    margin-right: 1px;
+    width: calc(1em + 1vw);
+    height: calc(1em + 1vw);
+
+  }
+
+  .btn2r1-dot {
+    margin-left:calc(2em + 200vw);
+    margin-right: 1px;
+    width: calc(1em + 1vw);
+    height: calc(1em + 1vw);
+
+  }
+  .service-btn-box {
+      margin-top: 5vh;
+      
+  }
+  .btn1-eclips {
+    width: calc( 6em + 5vh);
+    height: calc(6em + 5vh);
+    
+    margin-left: 30%;
+  }
+  .btn2-eclips {
+    width: calc(7em + 5vh);
+    height: calc(7em + 5vh);
+    margin-left:20%;
+    
+    
+
+  }
+
+ 
+  .btn3-eclips {
+    width: calc( 6em + 7vh);
+    height: calc(6em + 7vh);
+    margin-right: 5%;
+    margin-left:35%;
+  
+
+  }
+  .btn4-eclips {
+    width: calc(3em + 7vh);
+    height: calc(3em + 7vh);
+    margin-left:10%;
+    margin-right: 20%;
+    
+    
+
+  }
+  .btn5-eclips {
+    width: calc(4em + 8vh);
+    height: calc(4em + 8vh);
+    
+    margin-left:0;
+   
+
+  }
+  .btn6-eclips {
+    width: calc( 5em + 12vh);
+    height: calc(5em + 12vh);
+    margin-left:20%;
+    margin-right: 22%;
+    
+    
+    
+
+  }
+
+  .btn-info-box {
+    height: 100vh;
+    width: auto;
+    margin-top: -100vh;
+    margin-bottom: 0vh;
+    
+    z-index: 20;
+    transition: ease 1s all;
+    
+    
+  }
+  
+  .btnx-info-closed {
+    height: 100vh;
+    width: auto;
+    margin-top: -100vh;
+    margin-bottom: 0vh;
+    margin-left: -103vw;
+    z-index: 20;
+    transition: ease 1s all;
+    opacity: 0;
+  }
+
+  .btn-info-on {
+      opacity: 1;
+      margin-left: 0vw;
+  }
+
+  .btn-info-off {
+      opacity: 0;
+      margin-left: -103vw;
+  }
+
+
+  .service-info-bg img {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0.7;
+      z-index: 20;
+      
+  }
+
+  .service-close-btn {    
+    margin-top: 7vh;
+}
+.service-close-btn button {
+    margin-left: 85%;
+    font-size: calc(95% + 1vw);
+    color: rgba(37, 34, 34, 0.692);
+    position: absolute;
+    margin-right: 20vh;
+    z-index: 99;
+    padding: 1px !important;
+    background-color: transparent;
+    border: none;
+}
+.service-close-btn button:hover {
+    color: rgba(43, 40, 40, 0.884);
+    transform: scale(1.1);
+    transition: ease .2s all;
+}
+.service-close-btn button:active {
+    font-size: calc(85% + 1vw);
+   
+    color: rgba(58, 53, 53, 0.685);
+    transition: ease .2s all;
+
+}
+.service-close-btn button:focus{
+    outline: none;
+    outline-style: none;
+
+}
+
+.info2-container {
+    
+    
+    margin-top: 7%;
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    height: 85%;
+    overflow: hidden;
+    overflow-y: scroll;
+    text-align: right;
+    z-index: 21;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.137);
+    padding-bottom: 50vh;
+}
+
+.info2-container h1{
+    margin-top: 0%;
+    margin-right: 18%;
+    color: rgba(2, 148, 111, 0.849);
+    display: block;
+    font-weight: bold;
+    font-size: calc(80% + 1.5vw);
+    margin-bottom: 3vh;
+    
+}
+.info2-container p {
+    text-align: right;
+    margin-left: 27%;
+    width: 55%;
+    margin-right: 18%;
+    display: block;
+    font-size: calc(50% + 1vw);
+    
+    
+}
+
+
+.info3-container {
+    
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(206, 200, 200) rgba(11, 204, 140, 0.151);
+    
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    text-align: right;
+    z-index: 21;
+    
+    
+    
+
+}
+
+.info3-container h1{
+    margin-top: 16vh;
+    margin-right: 15%;
+    color: rgb(233, 223, 223);
+    display: block;
+    font-weight: bold;
+    font-size: calc(80% + 1.5vw);
+    margin-bottom: 3vh;
+    
+}
+.info3-container p {
+    margin-right: 15%;
+    display: block;
+    font-size: calc(50% + 1vw);
+    font-weight: bold;
+    
+}
+.info3-container img {
+    height: calc(2em + 7vw);
+    width: auto;
+    display: block;
+    margin-left: calc(5em + 17vw);
+    margin-top: calc(-3em - 7vw);
+}
+
+.info3-container button {
+    display: block;
+    cursor:unset;
+    margin-top: 1em;
+    margin-left: calc(4em + 12vw);
+    font-size: calc(0.4em + 1vw);
+    
+}
+
+.info4-container {
+    
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.137);
+    margin-top: 7%;
+    position: absolute;
+    height: 85%;
+    width: 100%;
+    text-align: right;
+    z-index: 21;
+    padding-bottom: 30vh;
+
+}
+
+.info4-container h1{
+    margin-top: 4%;
+    margin-bottom: 1em;
+    margin-right: 16%;
+    color: rgb(233, 223, 223);
+    display: block;
+    font-weight: bold;
+    font-size: calc(80% + 1.5vw);
+    
+    
+}
+.info4-container p {
+    
+    display: block;
+    margin-left: 50%;
+    width: 35%;
+    font-size: calc(50% + 1vw);
+    
+    line-height: 150%;
+    
+}
+
+.info4-container p:nth-of-type(2) {
+  width: 40%;
+    margin-top: 0em;
+    margin-left: 10%;
+    
+}
+
+.info5-container {
+    
+    scrollbar-width: thin;
+    scrollbar-color: rgb(206, 200, 200) rgba(11, 204, 140, 0.151);
+    overflow-y: scroll;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    z-index: 21;
+
+}
+
+.info5-container h1{
+    margin-top: 10vh;
+    margin-right: 18%;
+    color: rgb(233, 223, 223);
+    display: block;
+    font-weight: bold;
+    font-size: calc(80% + 1.5vw);
+    margin-bottom: 3vh;
+    
+}
+.info5-container p {
+    width: 80%;
+    
+    margin-left: 2%;
+    display: block;
+    font-size: calc(50% + 1vw);
+    font-weight: bold;
+    line-height: 150%;
+    
+}
+
+.info6-container {
+    
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(206, 200, 200) rgba(11, 204, 140, 0.151);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    text-align: right;
+    z-index: 21;
+}
+
+.info6-container h1{
+    margin-top: 16vh;
+    margin-right: 10%;
+    color: rgb(233, 223, 223);
+    display: block;
+    font-weight: bold;
+    font-size: calc(80% + 1.5vw);
+    margin-bottom: 3vh;
+    
+}
+.info6-container p {
+    display: block;
+    margin-right: 10%;
+    font-size: calc(50% + 1vw);
+    font-weight: bold;
+    line-height: 1.8em;
+    
+}
+.info6-container img {
+    height: calc(2em + 7vw);
+    width: auto;
+    display: block;
+    margin-left: calc(3em + 12vw);
+    margin-top: calc(-2em - 6vw);
+}
+
+.info6-container button {
+    display: block;
+    cursor:unset;
+    margin-top: 1em;
+    font-size: calc(0.4em + 1vw);
+    
+}
+
+.work-btn-s {
+    background: transparent;
+    border: none;
+    max-width: 5vw;
+    margin-right: 15vw;
+    margin-bottom: 10%;
+    
+}
+
+
+.work-btn-s:focus{
+  outline: none;
+}
+.work-text-s {
+  padding-top: 3%;
+  
+  width: 95%;
+  
+  text-align: right;
+  z-index: 3;
+  position: absolute;
+
+}
+
+.work-img-box-s {
+  width: calc(5em + 10vw);
+  height: auto;
+  
+  
+  object-fit: contain;
+}
+.work-img-s {
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.9;
+  transition: ease 0.5s all;
+  
+  
+}
+.work-img-s:hover{
+  transform: scale(1.2);
+  opacity: 1;
+  transition: all 0.5s ease;
+
+}
+.work-img-s:active {
+  opacity: 0.5;
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+  
+}
+
+.work-in-service-info-bg {
+  transform: scale(1.08);
+}
+
+.more-btn {
+    
+  background-color: transparent;
+  color: rgb(224, 216, 216);
+  height: 6vh;
+  width: 15vw;
+  margin-top: 15vh;
+  margin-left: 17vw;
+  margin-right: 2vw;
+  font-weight: bold;
+  font-size: calc(25px + 50%);
+  border: none;
+  transition: ease 0.3s all;
+  color: black;
+}
+
+.more-btn:focus {
+  outline: none;
+}
+.more-btn:hover {
+  font-size: calc(30px + 55%);
+  color: rgb(25, 133, 91);
+  animation: rotation 2s infinite linear;
+}
+.more-btn:active {
+  font-size: calc(20px + 50%);
+  color: rgb(185, 177, 177);
+
+}
+
+.btn-estdafa {
+  margin-right: 20%;
+  margin-top: -7%;
+  margin-bottom: 10%;
+  
+  
+  
+}
+.btn-estdafa button {
+  height: calc(1vh + 1.5em + 5px);
+  width: calc(7vh + 5em);
+  
+  
+  padding: 3px 10px 3px 5px;
+  position: relative;
+  font-size: calc(0.5em + 0.8vw + 3px);
+  background-color: rgb(37, 175, 145);
+  
+  color: rgb(209, 209, 209);
+  box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
+  
+  border: 1px solid gray;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.btn-estdafa button:hover {
+  background-color: rgba(31, 218, 171, 0.507);
+  color: white;
+  transition: ease 0.3s all;
+  
+}
+.btn-estdafa button:active {
+  background-color: rgb(36, 204, 162);
+  color: rgb(218, 211, 211);
+  box-shadow:inset 0.14em 0.14em 0.24em rgba(3, 3, 0.3, 0.29) ;
+  transition: ease 0.2s all;
+  margin-left: 59%;
+  font-size: calc(0.5em + 0.8vw + 2px);
+}
+.btn-estdafa button:focus {
+    outline: none;
+    outline-style: none;
+}
+
+
+/************** MOBILE VIEW *****************/
+@media  (orientation: landscape) {
+  info4-img-m {
+    display: none;
+  }
+}
+
+@media  (orientation: portrait), (max-width: 500px) {
+  .service-btn-box .btn-eclips {
+    font-size: 3.5vw;
+    line-height: 140%;
+    margin-bottom: 4vh;
+  }
+  .service-btn-box {
+    margin-top: 12vh;
+    margin-left: 5vw;
+    
+}
+
+  .btn1-eclips {
+    width: 30vw;
+    height: 30vw;
+    
+    margin-left: 0%;
+  }
+  .btn2-eclips {
+    width: 30vw;
+    height: 30vw;
+    margin-left: 10%;
+    
+    
+
+  }
+
+ 
+  .btn3-eclips {
+    width: 30vw;
+    height: 30vw;
+    margin-right: 0%;
+    margin-left:0%;
+  
+
+  }
+  .btn4-eclips {
+    width: 30vw;
+    height: 30vw;
+    margin-left:10%;
+    margin-right: 0%;
+    font-size: 4.5vw !important;
+    
+    
+
+  }
+  .btn5-eclips {
+    width: 30vw;
+    height: 30vw;
+    
+    margin-left:0;
+   
+
+  }
+  .btn6-eclips {
+    width: 30vw;
+    height: 30vw;
+    margin-left: 10%;
+    margin-right: 0%;
+    
+    
+    
+
+  }
+
+  .info2-container {
+    
+    
+    margin-top: 15%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    text-align: right;
+    z-index: 21;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.151);
+    line-height: 30px;
+    
+}
+
+
+.info2-container h1{
+    margin-top: 4%;
+    margin-right: 10%;
+    color: rgba(2, 148, 111, 0.849);
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    
+    
+}
+.info2-container p {
+    text-align: right;
+    margin-left: 15%;
+    width: 75%;
+    
+    
+    font-size: 15px;
+    
+    
+}
+.service-close-btn button {
+  margin-left: 89%;
+  font-size: 20px;
+  color: rgba(37, 34, 34, 0.692);
+  
+  margin-right: 20vw;
+
+  
+}
+.service-close-btn {    
+  margin-top: 9vh;
+}
+.work-btn-s {
+  
+  display: block !important;
+  margin-right: 0vw;
+  margin-left: 20vw;
+  
+}
+
+.work-img-box-s {
+  width: 25vw;
+  height: auto;
+  
+  
+  object-fit: contain;
+}
+
+
+
+.more-btn {
+    
+ 
+  height: 6vh;
+  width: 28vw;
+  margin-top: 8vh;
+  margin-left: 10vw;
+  margin-right: -17vw;
+  color: #06c28a;
+  font-size: 20px;
+
+}
+.more-btn:hover {
+  font-size: 18px;
+}
+.info4-container {
+  margin-top: 15%;
+  
+}
+.info4-container h1{
+  margin-top: 4%;
+  margin-bottom: 1em;
+  margin-right: 16%;
+  color: rgba(2, 148, 111, 0.849);
+  display: block;
+  font-weight: bold;
+  font-size: 25px;
+  
+  
+}
+.info4-container p {
+  display: block;
+  
+  font-size: 15px;
+  
+  line-height: 170%;
+  width: 70%;
+  margin-left: 15%;
+  
+  
+}
+
+.info4-container p:nth-of-type(2) {
+  margin-top: 1em;
+  margin-left: 15%;
+  width: 70%;
+  
+}
+.info4-img {
+  display: none;
+}
+.info5-container h1{
+  margin-top: 13vh;
+  margin-right: 12%;
+  color: rgb(233, 223, 223);
+  display: block;
+  font-weight: bold;
+  font-size: calc(80% + 1.5vw);
+  margin-bottom: 3vh;
+  
+}
+.info5-container p {
+  width: 70%;
+  
+  margin-left: 18%;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 150%;
+  
+}
+
+
+
+.service-info-bg img {
+  opacity: 1;
+}
+
+.service-close-btn button {
+  margin-left: 90%;
+}
+
+.btn-estdafa {
+  margin-right: 35%;
+ margin-top: 10%;
+ font-size: 18px;
+ 
+  
+}
+
+
+.btn-estdafa button {
+  height: 12%;
+  width: 25vw;
+  
+}
+
+
+}

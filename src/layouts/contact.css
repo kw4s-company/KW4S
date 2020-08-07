@@ -1,0 +1,184 @@
+.contact-text {
+    padding: 0%;
+    right: 0%;
+    width: 80%;
+    height: 100%;
+    overflow-y: scroll;
+    text-align: right;
+    z-index: 3;
+    position: absolute;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.137);
+    margin-top: 7%;
+    padding-bottom: 20vh;
+
+}
+.contact-text h1{
+    color:  rgba(28, 160, 127, 0.849);
+    display: block;
+    font-weight: bold;
+    font-size: calc(1em + 1.5vw);
+    margin-bottom: 1em;
+    margin-right: 15%;
+    margin-top: 0%;
+    
+}
+form {
+    margin-top: 2%;
+    margin-right: 15%;
+    text-align: right;
+    
+}
+form label {
+    margin-top: calc(0.8vh + 0.5em);
+    margin-bottom: calc(0.3em + 0.3vh);
+    display: block;
+    font-size: calc(0.4em + 0.7vw);
+}
+form input[type=text], [type=email] {
+    padding: 0.1em 0.5em;
+    height: calc(3vh + 0.5em);
+    width: calc(15vh + 12em + 20px);
+    text-align: right;
+    font-size: calc(0.3em + 0.5vw + 5px);
+    border: 1px solid rgba(41, 39, 39, 0.568);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow:3px 3px 5px rgba(3, 3, 0.3, 0.29) ;
+    background-color: transparent;
+}
+.form-textarea {
+    height: calc(7vh + 1.5em);
+    width: calc(15vh + 12em + 20px);
+    padding: 0.5vh 1vh;
+    text-align: right;
+    font-size: calc(0.3em + 0.5vw + 5px);
+    overflow: hidden;
+    border: 1px solid rgba(41, 39, 39, 0.568);
+    border-radius: 20px;
+    background-color: transparent;
+    box-shadow:3px 3px 5px rgba(3, 3, 0.3, 0.29) ;
+    resize: none;
+}
+
+form input[type=submit] {
+    
+    margin-top: 2%;
+    margin-bottom: 20%;
+    height: calc(1vh + 1.5em + 5px);
+    width: calc(7vh + 5em);
+    display: block;
+    margin-left: 36%;
+    padding: 3px 10px 3px 5px;
+    
+    font-size: calc(0.5em + 0.8vw + 3px);
+    background-color: rgb(28, 160, 127);
+    color: rgb(230, 221, 221);
+    box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    
+  }
+  form input[type=submit]:hover {
+    background-color: rgb(37, 175, 141);
+    color: white;
+    transition: ease 0.3s all;
+  }
+  form input[type=submit]:active {
+    background-color: rgb(29, 141, 113);
+    color: rgb(218, 211, 211);
+    box-shadow:0.14em 0.14em 0.24em rgba(3, 3, 0.3, 0.29) ;
+    transition: ease 0.2s all;
+    margin-left: 37%;
+    font-size: calc(0.5em + 0.8vw + 2px);
+  }
+
+  .phone-box {
+      width: 22%;
+      padding: 10px;
+      font-size: calc(0.4em + 0.7vw);
+      margin-left: 63%;
+      text-align: right !important;
+      line-height: 20px;
+      border: 1px solid rgb(177, 172, 172);
+      border-radius: 15px;
+      box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
+  }
+  .phone-box button {
+      background: transparent;
+      border: none;
+      margin-top: 10px;
+  }
+
+  .phone-box a {
+      text-decoration: none;
+      color: inherit;
+      color: rgb(29, 124, 100);
+  }
+  .phone-box a:hover {
+      color: rgb(29, 202, 159);
+  }
+  
+  
+
+  /************** MOBILE VIEW *****************/
+
+  @media  (orientation: landscape) {
+      .contact-bg-m {
+          display: none;
+      }
+  }
+
+  @media  (orientation: portrait), (max-width: 500px) {
+
+    form input[type=text], [type=email] {
+        background-color: rgba(25, 175, 142, 0.144);
+        width: 250px;
+        height: 35px;
+        font-size: 18px;
+    }
+
+.form-textarea {
+    background-color: rgba(25, 175, 142, 0.144);
+    width: 250px;
+    height: 70px;
+    font-size: 15px;
+}
+form input[type=submit] {
+    margin-top: 2em;
+    height: 5vh;
+    width: 30vw;
+    font-size: calc(15% + 15px) ;
+    margin-bottom: 0;
+}
+
+form label {
+    font-size: 20px ;
+}
+.contact-text {
+    margin-top: 12%;
+}
+
+.contact-text h1 {
+    margin-top: 4%;
+    
+    font-size: 35px;
+}
+.phone-box {
+    background-color: rgba(25, 175, 142, 0.144);
+    width: 75%;
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 15%;
+    text-align: left;
+    line-height: 20px;
+    border: 1px solid rgb(201, 199, 199);
+    border-radius: 15px;
+    box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
+}
+.contact.bg {
+    display: none;
+}
+
+  }
