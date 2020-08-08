@@ -64,9 +64,6 @@ export const query = graphql`
   kw4sData:allContentfulKw4SData{
     edges{
       node{
-        serviceText6{
-          serviceText6
-        }
         serviceText1{
           serviceText1
         }
@@ -76,11 +73,17 @@ export const query = graphql`
         serviceText3{
           serviceText3
         }
-        serviceText4{
-          serviceText4
+        serviceText41{
+          serviceText41
+        }
+        serviceText42{
+          serviceText42
         }
         serviceText5{
           serviceText5
+        }
+        serviceText6{
+          serviceText6
         }
       
       }

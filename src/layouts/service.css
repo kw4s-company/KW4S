@@ -345,7 +345,7 @@
     scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.137);
     margin-top: 7%;
     position: absolute;
-    height: 85%;
+    height: 100%;
     width: 100%;
     text-align: right;
     z-index: 21;
@@ -738,7 +738,7 @@
  
   height: 6vh;
   width: 28vw;
-  margin-top: 8vh;
+  margin-top: 5vh;
   margin-left: 10vw;
   margin-right: -17vw;
   color: #06c28a;

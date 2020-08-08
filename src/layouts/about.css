@@ -10,7 +10,7 @@
     position: absolute;
     scrollbar-width: thin;
     scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.151);
-    padding-bottom: 20vh;
+    padding-bottom: 0vh;
 }
 .about-text h1{
     color: rgb(233, 223, 223);
@@ -36,6 +36,7 @@
 .about-text-p2 {
     margin-top: 5%;
     margin-right: 14%;
+    margin-bottom: 20vh;
 }
 
 .about-img {

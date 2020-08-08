@@ -1,10 +1,11 @@
 import React, { Component } from "react"
 import aboutBG from "../../images/about01.jpg"
-import aboutImage1 from "../../images/about-image01.jpg"
-import aboutImage2 from "../../images/about-image02.jpg"
+//import aboutImage1 from "../../images/about-image01.jpg"
+//import aboutImage2 from "../../images/about-image02.jpg"
 import klogo from "../../images/logo-k4ws.png"
 import { FaBars,FaMapMarkerAlt} from "react-icons/fa"
 import { Link } from "gatsby"
+import Img from "gatsby-image"
 import { withScriptjs, withGoogleMap, GoogleMap, Marker} from "react-google-maps"
 
 
@@ -28,7 +29,8 @@ export default class aboutC extends Component {
       navbarOpen: false,
       css: "hero-min col-12 col-md-10",
       mapOpen:false,
-      mapSwitch:"map-box d-none"
+      mapSwitch:"map-box d-none",
+      webdata:props.webdata.edges,
     }
   }
 
@@ -76,27 +78,16 @@ export default class aboutC extends Component {
                   <h1>من نحن</h1>
 
                   <p className="about-text-p1">
-                    خطاب ويب شركة استشارية متخصصة في تقنية المعلومات و تطبيق
-                    البرمجيات و<br/> تطوير الشبكات، هدفنا الرئيسي هو رضا العملاء،
-                    وازدهارنا قائم على تزويد عملائنا<br/> بافضل الحلول الذكية التى
-                    تناسب معظم افكارهم و احتياجاتهم . تضم شركة خطاب<br/> ويب فريق عمل
-                    متكامل متخصص فى تصميم و تطوير مواقع الانترنت و التسويق<br/>
-                    الإلكتروني
+                    {this.state.webdata[0].node.aboutText1.aboutText1}
                   </p>
                   <div className="about-img">
-                  <img src={aboutImage1} alt=" "/>
+                    <Img fluid={this.state.webdata[0].node.aboutImageDesktop.fluid}/>
                   </div>
                   <div className="about-img-m">
-                  <img src={aboutImage2} alt=" "/>
+                    <Img fluid={this.state.webdata[0].node.aboutImageMobile.fluid}/>
                   </div>
                   <p className="about-text-p2">
-                    وانطلاقا من خبرتنا الطويلة و تنوع الاعمال التى قامت الشركة
-                    بتنفيذها<br/> على مدار اكثر من خمس سنوات ، تكون لدى فريق العمل
-                    القدرة على<br/> تقديم حلول متكاملة على الإنترنت . شركة خطاب ويب
-                    ليست مجرد شركة<br/> تصميم و تطوير مواقع بل هى شركة حلول متكاملة
-                    حيث تقدم الشركة<br/> استشارات و حلول متكاملة لادارة و تطوير
-                    المشاريع من خلال الحلول<br/> الحديثة و الافكار التسويقية المتخصصة
-                    و المبتكرة
+                     {this.state.webdata[0].node.aboutText2.aboutText2}
                   </p>
                   <div className="padding-filler"></div>
                 </div>
