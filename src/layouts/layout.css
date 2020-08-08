@@ -21,6 +21,9 @@ html {
     margin: 0 !important;
     
 }
+button:focus {
+  outline:none
+}
 
 body {
     background: url("../images/navloading01.jpg") no-repeat ;

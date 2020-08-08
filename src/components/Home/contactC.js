@@ -27,6 +27,7 @@ export default class contactC extends Component {
     this.state = {
       navbarOpen: false,
       css: "hero-min col-12 col-md-10",
+      webdata:props.webdata.edges,
     }
   }
 
@@ -74,19 +75,19 @@ export default class contactC extends Component {
                     <div className="phone-box">
                       <button className="">
                       
-                      <a href="tel:0548252956">0548252956</a>
+                      <a href={"tel:" + this.state.webdata[0].node.phone}>{this.state.webdata[0].node.phone} </a>
                       : <MdPhoneIphone />
                       </button>
 
                       <button className="">
                        
-                        <a href="mailto:kw4s.com@gmail.com">kw4s.com@gmail.com</a>
+                        <a href={"mailto:" + this.state.webdata[0].node.gmail}>{this.state.webdata[0].node.gmail}</a>
                         : <FaGoogle style={{color: "#ea4335"}}/>
                       </button>
                     
                       <button className="">
                       
-                      <a href="https://www.facebook.com/khatabweb">facebook/khatabweb</a>
+                      <a href={"https://www." + this.state.webdata[0].node.facebook}>{this.state.webdata[0].node.facebook}</a>
                       : <FaFacebook style={{color: "#1877f2"}}/>
                       </button>
                     </div>

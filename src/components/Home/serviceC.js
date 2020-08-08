@@ -44,9 +44,10 @@ export default class serviceC extends Component {
       btn4Switch: "btn-info-off",
       btn5Switch: "btn-info-off",
       btn6Switch: "btn-info-off",
+      webdata:props.webdata.edges,
       //----work pieces---------------------------
       items:props.items.edges,
-      workItems: Array.from(props.items.edges ).filter(e => e.node.category ==='app').reverse().slice(0,2),
+      workItems: Array.from(props.items.edges ).filter(e => e.node.category ==='الحراج').reverse().slice(0,2),
       
       workBtnsCss:"work-text in",
       workHeroSwitch:"show-content",
@@ -262,7 +263,7 @@ export default class serviceC extends Component {
                         <button key={node.id} className="col-10 col-md-5 work-btn-s"
                         onClick={() => this.workBtnHandler({node})}>
                           <div className="work-img-box-s">
-                            <Img fluid={node.workIcon.fluid} className="work-img-s"/>
+                            <Img fluid={node.workThumpnail.fluid} className="work-img-s"/>
                           </div>
                         </button>
                         
@@ -320,7 +321,7 @@ export default class serviceC extends Component {
                         <button key={node.id} className="col-10 col-md-5 work-btn-s"
                         onClick={() => this.workBtnHandler({node})}>
                           <div className="work-img-box-s">
-                            <Img fluid={node.workIcon.fluid} className="work-img-s"/>
+                            <Img fluid={node.workThumpnail.fluid} className="work-img-s"/>
                           </div>
                         </button>
                         
@@ -373,7 +374,7 @@ export default class serviceC extends Component {
                        <button key={node.id} className="col-10 col-md-5 work-btn-s"
                        onClick={() => this.workBtnHandler({node})}>
                          <div className="work-img-box-s">
-                           <Img fluid={node.workIcon.fluid} className="work-img-s"/>
+                           <Img fluid={node.workThumpnail.fluid} className="work-img-s"/>
                          </div>
                        </button>
                        
@@ -466,7 +467,7 @@ export default class serviceC extends Component {
                        <button key={node.id} className="col-10 col-md-5 work-btn-s"
                        onClick={() => this.workBtnHandler({node})}>
                          <div className="work-img-box-s">
-                           <Img fluid={node.workIcon.fluid} className="work-img-s"/>
+                           <Img fluid={node.workThumpnail.fluid} className="work-img-s"/>
                          </div>
                        </button>
                        
@@ -519,7 +520,7 @@ export default class serviceC extends Component {
                        <button key={node.id} className="col-10 col-md-5 work-btn-s"
                        onClick={() => this.workBtnHandler({node})}>
                          <div className="work-img-box-s">
-                           <Img fluid={node.workIcon.fluid} className="work-img-s"/>
+                           <Img fluid={node.workThumpnail.fluid} className="work-img-s"/>
                          </div>
                        </button>
                        
@@ -572,13 +573,13 @@ export default class serviceC extends Component {
                   
                   <div className={this.state.infoTextBoxCss}>
                     <div className="work-info-logo">
-                    <Img fluid={this.state.currentNode?.logo?.fluid == null ? "s" : this.state.currentNode.logo.fluid} className=""/>
+                    <Img fluid={this.state.currentNode?.workLogo?.fluid == null ? "s" : this.state.currentNode.workLogo.fluid} className=""/>
                     </div>
                     <div className="work-info-p1box">
-                    <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.description1}</p>
+                    <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.workText1?.workText1}</p>
                     </div>
                     <div className="work-info-p2box">
-                    <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.description2}</p>
+                    <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.workText2?.workText2}</p>
                     </div>
                     <div className="order-box">
                     <AniLink fade to="/contact">
@@ -590,13 +591,13 @@ export default class serviceC extends Component {
                   <Slider {...settings}>
                 <div>
                 
-                <Img fluid={this.state.currentNode?.image1?.fluid == null ? "s" : this.state.currentNode.image1.fluid} className="work-info-image fadeinn"/>
+                <Img fluid={this.state.currentNode?.workSlider1?.fluid == null ? "s" : this.state.currentNode.workSlider1.fluid} className="work-info-image fadeinn"/>
                 </div>
                 <div>
-                <Img fluid={this.state.currentNode?.image2?.fluid == null ? "s" : this.state.currentNode.image2.fluid} className="work-info-image fadeinn"/>
+                <Img fluid={this.state.currentNode?.workSlider2?.fluid == null ? "s" : this.state.currentNode.workSlider2.fluid} className="work-info-image fadeinn"/>
                 </div>
                 <div>
-                <Img fluid={this.state.currentNode?.image3?.fluid == null ? "s" : this.state.currentNode.image3.fluid} className="work-info-image fadeinn"/>
+                <Img fluid={this.state.currentNode?.workSlider3?.fluid == null ? "s" : this.state.currentNode.workSlider3.fluid} className="work-info-image fadeinn"/>
                 </div>
               
                 

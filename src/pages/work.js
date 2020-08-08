@@ -16,43 +16,45 @@ const WorkPage = ({ data }) => (
 
 export const query = graphql`
 {
-  workData:allContentfulOurWork{
+  workData:allContentfulWorkData{
     edges{
       node{
         id
         title
-        workIcon{
+        workThumpnail{
           fluid(maxWidth: 500, quality: 100){
             ...GatsbyContentfulFluid
           }
         }
-        logo{
+        workText1{
+          workText1
+        }
+        workText2{
+          workText2
+        }
+        workLogo{
           fluid(maxWidth:500, quality: 100){
             ...GatsbyContentfulFluid
           }
         }
-        image{
+        workSlider1{
           fluid(maxWidth:500, quality:100){
             ...GatsbyContentfulFluid
           }
         }
-        image1{
+        workSlider2{
           fluid(maxWidth:500, quality:100){
             ...GatsbyContentfulFluid
           }
         }
-        image2{
+        workSlider3{
           fluid(maxWidth:500, quality:100){
             ...GatsbyContentfulFluid
           }
         }
-        image3{
-          fluid(maxWidth:500, quality:100){
-            ...GatsbyContentfulFluid
-          }
-        }
-        description1
-        description2
+        googlePlayLink
+        appStoreLink
+        webSiteLink
         category
       }
     }

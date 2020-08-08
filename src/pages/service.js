@@ -8,53 +8,81 @@ import ServiceC from "../components/Home/serviceC"
 const ServicePage = ({ data }) => (
   <>
     <SEO title="Services" />
-    <ServiceC items={data.workDataS}/>
+    <ServiceC items={data.workData} webdata={data.kw4sData} />
   </>
 )
 
 
 
-export const query2 = graphql`
+export const query = graphql`
 {
 
-  workDataS:allContentfulOurWork{
+  workData:allContentfulWorkData{
     edges{
       node{
         id
         title
-        workIcon{
+        workThumpnail{
           fluid(maxWidth: 500, quality: 100){
             ...GatsbyContentfulFluid
           }
         }
-        logo{
+        workText1{
+          workText1
+        }
+        workText2{
+          workText2
+        }
+        workLogo{
           fluid(maxWidth:500, quality: 100){
             ...GatsbyContentfulFluid
           }
         }
-        image{
+        workSlider1{
           fluid(maxWidth:500, quality:100){
             ...GatsbyContentfulFluid
           }
         }
-        image1{
+        workSlider2{
           fluid(maxWidth:500, quality:100){
             ...GatsbyContentfulFluid
           }
         }
-        image2{
+        workSlider3{
           fluid(maxWidth:500, quality:100){
             ...GatsbyContentfulFluid
           }
         }
-        image3{
-          fluid(maxWidth:500, quality:100){
-            ...GatsbyContentfulFluid
-          }
-        }
-        description1
-        description2
+        googlePlayLink
+        appStoreLink
+        webSiteLink
         category
+      }
+    }
+  }
+
+  kw4sData:allContentfulKw4SData{
+    edges{
+      node{
+        serviceText6{
+          serviceText6
+        }
+        serviceText1{
+          serviceText1
+        }
+        serviceText2{
+          serviceText2
+        }
+        serviceText3{
+          serviceText3
+        }
+        serviceText4{
+          serviceText4
+        }
+        serviceText5{
+          serviceText5
+        }
+      
       }
     }
   }

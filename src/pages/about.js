@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 
 
 
@@ -9,10 +10,37 @@ import AboutC from "../components/Home/aboutC"
 const AboutPage = ({ data }) => (
   <>
     <SEO title="About Us" />
-    <AboutC />
+    <AboutC webdata={data.kw4sData}/>
   </>
 )
 
+export const query = graphql`
+{
+  kw4sData:allContentfulKw4SData{
+    edges{
+      node{
+        aboutText1{
+          aboutText1
+        }
+        aboutText2{
+          aboutText2
+        }
+        aboutImageDesktop{
+          fluid(maxWidth: 500, quality: 100){
+            ...GatsbyContentfulFluid
+          }
+        }
+        aboutImageMobile{
+          fluid(maxWidth: 500, quality: 100){
+            ...GatsbyContentfulFluid
+          }
+        }
+      }
+    }
+  }
+}
+
+`
 
 
 
