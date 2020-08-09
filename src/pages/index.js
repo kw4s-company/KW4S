@@ -22,22 +22,22 @@ export const query = graphql`
     edges{
       node{
         mainSlider1{
-          fluid(maxWidth: 500, quality: 100){
+          fluid(maxWidth: 1920, quality: 100){
             ...GatsbyContentfulFluid
           }
         }
         mainSlider2{
-          fluid(maxWidth: 500, quality: 100){
+          fluid(maxWidth: 1920, quality: 100){
             ...GatsbyContentfulFluid
           }
         }
         mainSlider3{
-          fluid(maxWidth: 500, quality: 100){
+          fluid(maxWidth: 1920, quality: 100){
             ...GatsbyContentfulFluid
           }
         }
         mainSlider4{
-          fluid(maxWidth: 500, quality: 100){
+          fluid(maxWidth: 1920, quality: 100){
             ...GatsbyContentfulFluid
           }
         }

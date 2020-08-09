@@ -141,13 +141,14 @@
  display: flex;
  flex-flow: row-reverse;
  right: 15%;
+ 
 }
 
 .filter-btn {
     font-size: calc(0.8vw + 0.6em);
     font-weight: bold;
     color: #f8f1f1;
-    background-color: rgba(29, 209, 164, 0.849);
+    background-color: #06c28a;
     border: 2px double rgb(196, 196, 196) ;
     border-radius: 10px;
     margin-right: 1vw;
@@ -601,7 +602,7 @@
 
       .app-box{
         margin-right: 0%;
-        top: 30vh;
+        top: 25vh;
         left: 70%;
         width: 30%;
         margin-top: 0%;
@@ -653,7 +654,7 @@
         margin-right: 0% !important;
         margin-top: 0% !important;
         left: 68.5%;
-        top: 27vh;
+        top: 22vh;
         
         
         

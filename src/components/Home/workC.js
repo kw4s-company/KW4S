@@ -125,7 +125,7 @@ export default class aboutC extends Component {
             </Link>
             </div>
             <div className="toggle-btn">
-            <button onClick={this.mapHandler}>
+              <button onClick={this.mapHandler}>
               <FaMapMarkerAlt />
               </button>
               <button onClick={this.navbarHandler}>
@@ -212,6 +212,9 @@ export default class aboutC extends Component {
             </Link>
             </div>
             <div className="toggle-btn">
+              <button style={{color: "transparent"}}>
+              <FaMapMarkerAlt />
+              </button>
               <button onClick={this.navbarHandler}>
               <FaBars />
               </button>
@@ -273,7 +276,7 @@ export default class aboutC extends Component {
                   {/*<Img fluid={this.state.currentNode.image.fluid} className="work-info-image"/>*/}
                   </div>
                   
-                  {appcheck === 'app' ? (
+                  {appcheck === 'تطبيقات' ? (
                       <div className="app-box">
                         <button className="app-btn"><div><img src={gplay} alt=""/></div></button>
                         <button className="app-btn"><div><img src={appstore} alt=""/></div></button>  

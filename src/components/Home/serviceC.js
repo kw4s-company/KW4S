@@ -10,6 +10,7 @@ import { Link } from "gatsby"
 //----work pieces------------------------------
 import Img from "gatsby-image"
 import workInfoBG from "../../images/work-info01.jpg"
+import workInfoBGm from "../../images/work-info-m.jpg"
 import AniLink from "gatsby-plugin-transition-link/AniLink";
 import Slider from "react-slick";
 import gplay from "../../images/gplay01.png"
@@ -496,6 +497,9 @@ export default class serviceC extends Component {
             </Link>
             </div>
             <div className="toggle-btn">
+              <button style={{color: "transparent"}}>
+              <FaMapMarkerAlt />
+              </button>
               <button onClick={this.navbarHandler}>
               <FaBars />
               </button>
@@ -517,6 +521,7 @@ export default class serviceC extends Component {
                 </div>
                 <div className="work-info-bg">
                   <img src={workInfoBG} alt="Info Backgroud1" className="work-in-service-info-bg"/>
+                  <img src={workInfoBGm} alt="Info Backgroudm" className="info-bg-m"/>
                 </div>
                 <div className="work-info-container">
                   
@@ -563,6 +568,7 @@ export default class serviceC extends Component {
                    ) : (
                     <div className="app-box web-box">
                     <button className="app-btn"><div className="web-btn"><img src={wwweb} alt=""/></div></button>
+                    <button className="web-btn-m"> زيارة الموقع</button>
                     </div>
                     )
                   }

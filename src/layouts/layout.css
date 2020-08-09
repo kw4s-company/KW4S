@@ -122,7 +122,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .logo-k4ws {
     left: 5%;
-    margin-top: 3vh;
+    margin-top: 5vh;
     position: absolute;
     z-index: 50;
     transition: ease 0.9s all;
@@ -207,7 +207,7 @@ h1,h2,h3,h4,h5,h6 {
   height: 60%;
   border-radius: 20px;
   overflow: hidden;
-  border: 3px solid rgb(22, 163, 104);
+  border: 3px solid #06c28a;
 }
 
 
@@ -366,11 +366,18 @@ to   { opacity: 1;  margin-right: 0em;}
   }
   .hero-full {
     border-radius: 0%;
-    border-top: none;
+    border-top: 0.1px solid gray;
   }
+  .logo-k4ws {
+    left: 6%;
+    margin-top: 2.5vh;
+    position: absolute;
+    z-index: 50;
+    transition: ease 0.9s all;
+}
 
   .logo-k4ws img {
-    height: 5vh;
+    height: 4vh;
     width: auto;
 }
 body {
@@ -386,7 +393,7 @@ body {
 
 .toggle-btn {
   margin-top: 2vh;
-  left: 75%;
+  left: 73%;
 }
 
 .toggle-btn button {
@@ -398,7 +405,7 @@ body {
   position: absolute;
   top: 4em;
   right: 10%;
-  z-index: 99;
+  z-index: 99999;
   width: 80%;
   height: 60%;
   
