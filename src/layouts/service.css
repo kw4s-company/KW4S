@@ -524,10 +524,10 @@
   border-radius: 50px;
   background-color: #06c28a;
   box-shadow: 2px 2px 5px rgba(58, 55, 55, 0.507);
-  border: 1px solid gray;
-  padding: 1px 20px;
+  border: 0px solid gray;
+  padding: 1px 10px;
  
-  height: 5vh;
+  height: 6vh;
   width: auto;
   margin-top: 13vh;
   margin-left: 22vw;
@@ -550,6 +550,9 @@
   background-color: rgb(36, 204, 162);
   box-shadow:inset 0.14em 0.14em 0.24em rgba(3, 3, 0.3, 0.29) ;
 
+}
+.more-btn .arrow-left {
+  font-size: calc(30px + 60%);
 }
 
 .btn-estdafa {
@@ -742,14 +745,14 @@
    
   color: white;
   border-radius: 50px;
-  background-color: #06c28a;
-  box-shadow: 2px 2px 5px rgba(58, 55, 55, 0.507);
-  border: 1px solid gray;
-  padding: 1px 10px;
+  background-color: #22c594;
+  box-shadow: 1px 1px 5px rgba(58, 55, 55, 0.507);
+  border: 0px solid gray;
+  padding: 0px 5px;
  
   height: 5vh;
   width: auto;
-  font-size: 15px;
+  font-size: 12px;
   transition: ease 0.3s all;
 
  
@@ -759,8 +762,8 @@
   
 
 }
-.more-btn:hover {
-  font-size: 18px;
+.more-btn .arrow-left {
+  font-size: 20px;
 }
 .info4-container {
   margin-top: 15%;
