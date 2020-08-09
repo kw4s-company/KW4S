@@ -119,7 +119,7 @@ export default function Navbar() {
 
       </div>
 
-      <div className="btn whatsapp-btn"><a href="https://wa.me/00966548252956"><img src={whatsappIcon} alt="whatsapp logo"/></a></div>
+      <div className="btn whatsapp-btn"><a href="https://wa.me/+966548252956"><img src={whatsappIcon} alt="whatsapp logo"/></a></div>
     </div>
     
   )
