@@ -5,7 +5,7 @@ import infoBG0 from "../../images/work01.jpg"
 import info4BG from "../../images/btn401.jpg"
 //import info5BG from "../../images/btn501.jpg"
 import klogo from "../../images/logo-k4ws.png"
-import { FaBars, FaTimes, FaMapMarkerAlt } from "react-icons/fa"
+import { FaBars, FaTimes, FaMapMarkerAlt, FaArrowCircleLeft } from "react-icons/fa"
 import { Link } from "gatsby"
 //----work pieces------------------------------
 import Img from "gatsby-image"
@@ -245,7 +245,7 @@ export default class serviceC extends Component {
                   <div className="row">
                     <div>
                   <AniLink fade to="/work">
-                    <button className="more-btn"><span className="">...المزيــد </span></button>
+                    <button className="more-btn"><span className=""><FaArrowCircleLeft/> &nbsp;&nbsp;المزيــد </span></button>
                   </AniLink>
                     </div>
                     {this.state.workItems.map(({node}, i) => {
@@ -292,7 +292,7 @@ export default class serviceC extends Component {
                   <div className="row">
                     <div>
                   <AniLink fade to="/work">
-                    <button className="more-btn"><span className="">  ...المزيــد </span></button>
+                    <button className="more-btn"><span className=""> <FaArrowCircleLeft/> &nbsp;&nbsp;المزيــد  </span></button>
                   </AniLink>
                     </div>
                     {this.state.workItems.map(({node}, i) => {
@@ -338,7 +338,7 @@ export default class serviceC extends Component {
                  <div className="row">
                    <div>
                  <AniLink fade to="/work">
-                   <button className="more-btn"><span className="">  ...المزيــد </span></button>
+                   <button className="more-btn"><span className="">  <FaArrowCircleLeft/> &nbsp;&nbsp;المزيــد  </span></button>
                  </AniLink>
                    </div>
                    {this.state.workItems.map(({node}, i) => {
@@ -414,7 +414,7 @@ export default class serviceC extends Component {
                  <div className="row">
                    <div>
                  <AniLink fade to="/work">
-                   <button className="more-btn"><span className=""> ...المزيــد </span></button>
+                   <button className="more-btn"><span className=""> <FaArrowCircleLeft/> &nbsp;&nbsp;المزيــد  </span></button>
                  </AniLink>
                    </div>
                    {this.state.workItems.map(({node}, i) => {
@@ -462,7 +462,7 @@ export default class serviceC extends Component {
                  <div className="row">
                    <div>
                  <AniLink fade to="/work">
-                   <button className="more-btn"><span className=""> ...المزيــد </span></button>
+                   <button className="more-btn"><span className=""> <FaArrowCircleLeft/> &nbsp;&nbsp;المزيــد  </span></button>
                  </AniLink>
                    </div>
                    {this.state.workItems.map(({node}, i) => {
