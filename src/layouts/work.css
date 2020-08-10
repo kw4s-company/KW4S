@@ -148,7 +148,7 @@
     font-size: calc(0.8vw + 0.6em);
     font-weight: bold;
     color: #f8f1f1;
-    background-color: #06c28a;
+    background-color: #05d8aa;
     border: 2px double rgb(196, 196, 196) ;
     border-radius: 10px;
     margin-right: 1vw;
@@ -158,7 +158,7 @@
     
 }
 .filter-btn:hover {
-    background-color: rgba(17, 236, 189, 0.89);
+    background-color: rgba(0, 255, 200, 0.89);
     color: white;
     -webkit-animation: glow2 1s ease-in-out infinite alternate;
     -moz-animation: glow2 1s ease-in-out infinite alternate;
@@ -259,9 +259,10 @@
 
 
 .work-info-logo {
-    top: 1%;
-    margin-top: -7%;
-    width: calc(2em + 4vw);
+    top: 0%;
+    margin-top: 0;
+    margin-left: 4%;
+    width: calc(2em + 3vw);
     height: auto;
     text-align: right;
     z-index: 7;
@@ -276,9 +277,10 @@
 }
 
 .work-info-p1box {
-    margin-top: calc(-15vh + 1.6em);
-    margin-right: calc(8vh + 3em);
+    margin-top: 5%;
+    margin-right: 0;
     min-height: 10vh;
+    width: 80%;
 }
 
 .work-info-p1box p {
@@ -328,8 +330,9 @@
 }
 .order-box {
     position: relative;
-    margin-left: 0%;
+    margin-left: 65%;
     margin-top: 5%;
+    width: 0%;
 }
 
 .order-now-btn {
@@ -379,7 +382,7 @@
 .app-btn {
     background-color: transparent;
     border: none;
-    margin-right: 2%;
+    margin-right: 3%;
     
 }
 
@@ -508,7 +511,13 @@
         display: none;
     }
     .work-info-logo {
-        display: none;
+        position: absolute;
+        margin-top: 75%;
+        left: 75%;
+        width: 20%;
+    }
+    .work-info-logo-m {
+       position: absolute;
     }
     .work-info-container {
         padding-right: 5%;
@@ -536,6 +545,7 @@
         margin-top: 5vh;
         margin-right: 0;
         min-height: 10vh;
+        width: 100%;
     }
     
     .work-info-p1box p {
@@ -565,7 +575,7 @@
         height: auto;
         max-height: 50%;
         margin-left: 4.5%;
-        margin-top: 5%;
+        margin-top: 12%;
         
         text-align: right;
         z-index: 7;
@@ -576,8 +586,8 @@
 
     .order-box {
         position: absolute;
-        margin-left: 40%;
-        margin-top: 35%;
+        margin-left: 72%;
+        margin-top: 40%;
     }
     
     .order-now-btn {
@@ -591,7 +601,7 @@
         position: relative;
         font-size: 15px;
         font-weight: bold;
-        background:rgb(209, 255, 230);
+        background:rgb(235, 236, 236);
         color: rgb(29, 190, 169);
         box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
         
@@ -602,7 +612,7 @@
 
       .app-box{
         margin-right: 0%;
-        top: 25vh;
+        top: 28vh;
         left: 70%;
         width: 30%;
         margin-top: 0%;
@@ -654,7 +664,7 @@
         margin-right: 0% !important;
         margin-top: 0% !important;
         left: 68.5%;
-        top: 22vh;
+        top: 25vh;
         
         
         
@@ -675,7 +685,7 @@
         padding: 3px 10px 3px 5px;
         
         font-weight: bold;
-        background:rgb(209, 255, 230);
+        background:rgb(239, 240, 239);
         color: rgb(29, 190, 169);
         box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
         border: none;

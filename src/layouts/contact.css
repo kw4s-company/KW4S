@@ -72,7 +72,7 @@ form input[type=submit] {
     padding: 3px 10px 3px 5px;
     
     font-size: calc(0.5em + 0.8vw + 3px);
-    background-color: rgb(28, 160, 127);
+    background-color: #06c28a;
     color: rgb(230, 221, 221);
     box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
     border: none;
@@ -81,17 +81,17 @@ form input[type=submit] {
     
   }
   form input[type=submit]:hover {
-    background-color: rgb(37, 175, 141);
+    transform: scale(1.07);
+    background-color: rgba(31, 218, 171, 0.507);
     color: white;
     transition: ease 0.3s all;
   }
   form input[type=submit]:active {
-    background-color: rgb(29, 141, 113);
+    transform: scale(1);
+    background-color: #06c28a;
     color: rgb(218, 211, 211);
-    box-shadow:0.14em 0.14em 0.24em rgba(3, 3, 0.3, 0.29) ;
+    box-shadow:inset 0.14em 0.14em 0.24em rgba(3, 3, 0.3, 0.29) ;
     transition: ease 0.2s all;
-    margin-left: 37%;
-    font-size: calc(0.5em + 0.8vw + 2px);
   }
 
   .phone-box {

@@ -241,11 +241,14 @@ export default class aboutC extends Component {
                 <div className="work-info-container">
                   
                   <div className={this.state.infoTextBoxCss}>
+                    <div className="row">
+                    <div className="work-info-p1box">
+                    <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.workText1?.workText1}</p>
+                    </div>
                     <div className="work-info-logo">
                     <Img fluid={this.state.currentNode?.workLogo?.fluid == null ? "s" : this.state.currentNode.workLogo.fluid} className=""/>
                     </div>
-                    <div className="work-info-p1box">
-                    <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.workText1?.workText1}</p>
+                    
                     </div>
                     <div className="work-info-p2box">
                     <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.workText2?.workText2}</p>
@@ -278,13 +281,21 @@ export default class aboutC extends Component {
                   
                   {appcheck === 'تطبيقات' ? (
                       <div className="app-box">
+                        <a href={this.state.currentNode?.googlePlayLink}>
                         <button className="app-btn"><div><img src={gplay} alt=""/></div></button>
-                        <button className="app-btn"><div><img src={appstore} alt=""/></div></button>  
+                        </a>
+                        <a href={this.state.currentNode?.appStoreLink}>
+                        <button className="app-btn"><div><img src={appstore} alt=""/></div></button>
+                        </a>
                       </div> 
                    ) : (
                     <div className="app-box web-box">
+                    <a href={this.state.currentNode?.webSiteLink}>
                     <button className="app-btn"><div className="web-btn"><img src={wwweb} alt=""/></div></button>
+                    </a>
+                    <a href={this.state.currentNode?.webSiteLink}>
                     <button className="web-btn-m"> زيارة الموقع</button>
+                    </a>
                     </div>
                     
                     )

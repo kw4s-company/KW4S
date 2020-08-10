@@ -560,15 +560,23 @@ export default class serviceC extends Component {
             
                   {/*<Img fluid={this.state.currentNode.image.fluid} className="work-info-image"/>*/}
                   </div>
-                  {appcheck === 'app' ? (
+                  {appcheck === 'تطبيقات' ? (
                       <div className="app-box">
+                        <a href={this.state.currentNode?.googlePlayLink}>
                         <button className="app-btn"><div><img src={gplay} alt=""/></div></button>
-                        <button className="app-btn"><div><img src={appstore} alt=""/></div></button>  
+                        </a>
+                        <a href={this.state.currentNode?.appStoreLink}>
+                        <button className="app-btn"><div><img src={appstore} alt=""/></div></button>
+                        </a>
                       </div> 
                    ) : (
                     <div className="app-box web-box">
+                    <a href={this.state.currentNode?.webSiteLink}>
                     <button className="app-btn"><div className="web-btn"><img src={wwweb} alt=""/></div></button>
+                    </a>
+                    <a href={this.state.currentNode?.webSiteLink}>
                     <button className="web-btn-m"> زيارة الموقع</button>
+                    </a>
                     </div>
                     )
                   }
