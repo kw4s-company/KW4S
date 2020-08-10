@@ -17,7 +17,7 @@
 
 .main-text {
     
-    border-top: 2px solid rgb(95, 109, 104);
+    border-top: 1.5px dashed rgb(124, 124, 124);
     margin-top: -1.5vh;
     background: url("../images/nav01.jpg");
     overflow: hidden;
@@ -27,7 +27,7 @@
 
     height: 65vh;
     position: relative;
-    
+    box-shadow:inset 2px 9px 15px gray;
     
 
 }
