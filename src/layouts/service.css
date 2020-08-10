@@ -606,6 +606,9 @@
   info4-img-m {
     display: none;
   }
+  .service-bg-m {
+    display: none;
+  }
 }
 
 @media  (orientation: portrait), (max-width: 500px) {
@@ -846,6 +849,8 @@
   width: 25vw;
   
 }
-
+.service-bg {
+  display: none;
+}
 
 }

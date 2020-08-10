@@ -1,5 +1,6 @@
 import React, { Component } from "react"
 import serviceBG from "../../images/service02.jpg"
+import serviceBGm from "../../images/work-info-m.jpg"
 import infoBG0 from "../../images/work01.jpg"
 //import infoBG1 from "../../images/btn101.jpg"
 import info4BG from "../../images/btn401.jpg"
@@ -49,6 +50,11 @@ export default class serviceC extends Component {
       //----work pieces---------------------------
       items:props.items.edges,
       workItems: Array.from(props.items.edges ).filter(e => e.node.category ==='تطبيقات').reverse().slice(0,2),
+      workApp: Array.from(props.items.edges ).filter(e => e.node.category ==='تطبيقات').reverse().slice(0,2),
+      workWeb: Array.from(props.items.edges ).filter(e => e.node.category ==='مواقع').reverse().slice(0,2),
+      workBlog: Array.from(props.items.edges ).filter(e => e.node.category ==='مدونات').reverse().slice(0,2),
+      workEcom: Array.from(props.items.edges ).filter(e => e.node.category ==='متاجر').reverse().slice(0,2),
+      workHarag: Array.from(props.items.edges ).filter(e => e.node.category ==='حراج').reverse().slice(0,2),
       
       workBtnsCss:"work-text in",
       workHeroSwitch:"show-content",
@@ -159,7 +165,8 @@ export default class serviceC extends Component {
 
             <div>
               <div className="hero-bg">
-                <img src={serviceBG} alt="Service Backgroud"/>
+                <img src={serviceBG} alt="Service Backgroud" className="service-bg"/>
+                <img src={serviceBGm} alt="Service Backgroud" className="service-bg-m"/>
 
                 <div className={this.state.btnsCss}>
                   <div className="row">
@@ -248,7 +255,7 @@ export default class serviceC extends Component {
                     <button className="more-btn"><span className=""><FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد </span></button>
                   </AniLink>
                     </div>
-                    {this.state.workItems.map(({node}, i) => {
+                    {this.state.workHarag.map(({node}, i) => {
                       return(
                         <button key={node.id} className="col-10 col-md-5 work-btn-s"
                         onClick={() => this.workBtnHandler({node})}>
@@ -295,7 +302,7 @@ export default class serviceC extends Component {
                     <button className="more-btn"><span className=""> <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
                   </AniLink>
                     </div>
-                    {this.state.workItems.map(({node}, i) => {
+                    {this.state.workEcom.map(({node}, i) => {
                       return(
                         <button key={node.id} className="col-10 col-md-5 work-btn-s"
                         onClick={() => this.workBtnHandler({node})}>
@@ -341,7 +348,7 @@ export default class serviceC extends Component {
                    <button className="more-btn"><span className="">  <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
                  </AniLink>
                    </div>
-                   {this.state.workItems.map(({node}, i) => {
+                   {this.state.workApp.map(({node}, i) => {
                      return(
                        <button key={node.id} className="col-10 col-md-5 work-btn-s"
                        onClick={() => this.workBtnHandler({node})}>
@@ -417,7 +424,7 @@ export default class serviceC extends Component {
                    <button className="more-btn"><span className=""> <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
                  </AniLink>
                    </div>
-                   {this.state.workItems.map(({node}, i) => {
+                   {this.state.workBlog.map(({node}, i) => {
                      return(
                        <button key={node.id} className="col-10 col-md-5 work-btn-s"
                        onClick={() => this.workBtnHandler({node})}>
@@ -465,7 +472,7 @@ export default class serviceC extends Component {
                    <button className="more-btn"><span className=""> <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
                  </AniLink>
                    </div>
-                   {this.state.workItems.map(({node}, i) => {
+                   {this.state.workWeb.map(({node}, i) => {
                      return(
                        <button key={node.id} className="col-10 col-md-5 work-btn-s"
                        onClick={() => this.workBtnHandler({node})}>
@@ -526,11 +533,14 @@ export default class serviceC extends Component {
                 <div className="work-info-container">
                   
                   <div className={this.state.infoTextBoxCss}>
+                  <div className="row">
+                    <div className="work-info-p1box">
+                    <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.workText1?.workText1}</p>
+                    </div>
                     <div className="work-info-logo">
                     <Img fluid={this.state.currentNode?.workLogo?.fluid == null ? "s" : this.state.currentNode.workLogo.fluid} className=""/>
                     </div>
-                    <div className="work-info-p1box">
-                    <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.workText1?.workText1}</p>
+                    
                     </div>
                     <div className="work-info-p2box">
                     <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.workText2?.workText2}</p>

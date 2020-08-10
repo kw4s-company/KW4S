@@ -122,13 +122,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 .logo-k4ws {
     left: 5%;
-    margin-top: 5vh;
+    margin-top: 5%;
     position: absolute;
     z-index: 50;
-    transition: ease 0.9s all;
+    
 }
 .logo-k4ws:hover {
     transform: scale(1.2);
+    transition: ease 0.9s all;
     
 }
 .logo-k4ws img {
@@ -373,7 +374,7 @@ to   { opacity: 1;  margin-right: 0em;}
     margin-top: 2.5vh;
     position: absolute;
     z-index: 50;
-    transition: ease 0.9s all;
+    
 }
 
   .logo-k4ws img {
@@ -398,6 +399,11 @@ body {
 
 .toggle-btn button {
   font-size: 25px;
+}
+.toggle-btn button:hover {
+  color: rgb(0, 0, 0);
+  transition: none;
+  transform: scale(1.1);
 }
 
 .map-box {
