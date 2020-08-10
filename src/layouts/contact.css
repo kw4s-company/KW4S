@@ -120,14 +120,14 @@ form input[type=submit] {
       color: rgb(29, 202, 159);
   }
   
-  
+  .contact-bg-m {
+    display: none;
+}
 
   /************** MOBILE VIEW *****************/
 
   @media  (orientation: landscape) {
-      .contact-bg-m {
-          display: none;
-      }
+    
   }
 
   @media  (max-width: 500px) {
@@ -182,6 +182,9 @@ form label {
 }
 .contact.bg {
     display: none;
+}
+.contact-bg-m {
+    display: block;
 }
 
   }
