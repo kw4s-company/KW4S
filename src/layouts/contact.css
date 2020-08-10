@@ -66,12 +66,12 @@ form input[type=submit] {
     margin-top: 2%;
     margin-bottom: 20%;
     height: calc(1vh + 1.5em + 5px);
-    width: calc(7vh + 5em);
+    width: auto;
     display: block;
     margin-left: 36%;
-    padding: 3px 10px 3px 5px;
+    padding: 3px 50px;
     
-    font-size: calc(0.5em + 0.8vw + 3px);
+    font-size: calc(0.5em + 0.8vw + 5px);
     background-color: #06c28a;
     color: rgb(230, 221, 221);
     box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
@@ -146,10 +146,11 @@ form input[type=submit] {
     font-size: 15px;
 }
 form input[type=submit] {
-    margin-top: 2em;
-    height: 5vh;
-    width: 30vw;
-    font-size: calc(15% + 15px) ;
+    margin-top: 10%;
+    height: 35px;
+    padding:0px 30px ;
+    font-size: 20px;
+    margin-left: 30%;
     margin-bottom: 0;
 }
 

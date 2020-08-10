@@ -92,7 +92,7 @@ export default class contactC extends Component {
                       </button>
                     </div>
 
-                  <form action="https://formspree.io/5min4coffee@gmail.com" method="POST">
+                  <form action="https://formspree.io/mbjzbodz" method="POST">
                     <label  htmlFor="name">الإسم</label>
                     <input
                       type="text"
