@@ -21,7 +21,9 @@
 .work-btn {
     background-color: transparent;
     border: none;
-    margin-left: 4em;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    
     
     
 }
@@ -153,10 +155,10 @@
     background-color: #05d8aa;
     border: 2px double rgb(196, 196, 196) ;
     border-radius: 10px;
-    margin-right: 1vw;
-    margin-left: 2vw;
+    margin-right: 0vw;
+    margin-left: 1vw;
     
-    box-shadow:inset 2px 6px 9px gray;
+    box-shadow:inset 3px 3px 6px gray;
     
 }
 .filter-btn:hover {
@@ -462,21 +464,23 @@
     .filter-box {
         display: flex;
         flex-flow: row-reverse;
-        right: 20%;
+        right: 18%;
+        margin-top: 10%;
         position:fixed;
+        flex-wrap: wrap;
        }
 
       .filter-btn {
         font-size: 15px;
         font-weight: bold;
         color: #f8f1f1;
-        background-color: rgba(29, 209, 164, 0.849);
+        
         border: 2px double rgb(196, 196, 196) ;
         border-radius: 10px;
         margin-right: 1vw;
         margin-left: 2vw;
-        margin-top: 7vh;
-        margin-bottom: 1vh;
+        margin-top: 0vh;
+        margin-bottom: 4%;
         
         
     }
@@ -486,7 +490,7 @@
     }
 
     .work-btns-box {
-        margin-top: 12%;
+        margin-top: 23%;
         scrollbar-width: thin;
         scrollbar-color: rgb(206, 200, 200) rgba(11, 204, 140, 0.151);
         overflow: hidden;

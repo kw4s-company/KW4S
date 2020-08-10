@@ -157,7 +157,7 @@ export default class aboutC extends Component {
                     
                     {this.state.workItems.map(({node}, i) => {
                       return(
-                        <button key={node.id} className="col-10 col-md-5 work-btn"
+                        <button key={node.id} className="col-10 col-md-3 work-btn"
                         onClick={() => this.workBtnHandler({node})}>
                           <div className="work-img-box">
                             <Img fluid={node.workThumpnail.fluid} className="work-img fadeinn"/>

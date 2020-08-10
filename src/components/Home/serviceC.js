@@ -48,7 +48,7 @@ export default class serviceC extends Component {
       webdata:props.webdata.edges,
       //----work pieces---------------------------
       items:props.items.edges,
-      workItems: Array.from(props.items.edges ).filter(e => e.node.category ==='الحراج').reverse().slice(0,2),
+      workItems: Array.from(props.items.edges ).filter(e => e.node.category ==='تطبيقات').reverse().slice(0,2),
       
       workBtnsCss:"work-text in",
       workHeroSwitch:"show-content",
