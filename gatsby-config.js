@@ -4,10 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `شركة خطاب ويب`,
-    description: `شركة خطاب ويب للبرمجيات شركة سعودية رسمية لتصميم و برمجة و تطوير التطبيقات و المواقع الالكترونية تتمتع بامكانيات وخبرات كبيرة نضعها في متناول عملائنا الكرام`,
-    author: `خطاب`,
-    keywords:[" خطاب", "ويب", "تطبيق", "نطبيقات", "مواقع", "مدونة", "حراج", "تصميم", "برمجة", "سعودية", "رسمية", "استضافة", "متاجر", "مساعدة", "صيانة", "اعطال", "تنفيذ", "تطوير", "خدمة", "خدمات"]
+    title: `K4WS`,
+    description: `Create the best mobile and web applications`,
+    author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
