@@ -318,7 +318,7 @@ export default class serviceC extends Component {
 
                 
                 </div>
-                <div className="padding-filler"></div>
+                
                 </div>
               </div>
             </div>

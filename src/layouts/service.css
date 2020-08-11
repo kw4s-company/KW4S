@@ -271,17 +271,18 @@
     color: rgba(2, 148, 111, 0.849);
     display: block;
     font-weight: bold;
-    font-size: calc(80% + 30px);
+    font-size: calc(80% + 3vh);
     margin-bottom: 3vh;
     
 }
 .info2-container p {
     text-align: right;
     margin-left: 27%;
+    height: 20vh;
     width: 55%;
     margin-right: 18%;
     display: block;
-    font-size: calc(50% + 20px);
+    font-size: calc(40% + 2vh);
     
     
     
@@ -361,7 +362,7 @@
     color: rgba(2, 148, 111, 0.849);
     display: block;
     font-weight: bold;
-    font-size: calc(80% + 30px);
+    font-size: calc(80% + 3vh);
     
     
 }
@@ -370,7 +371,7 @@
     display: block;
     margin-left: 50%;
     width: 35%;
-    font-size: calc(50% + 1vw);
+    font-size: calc(50% + 2vh);
     
     line-height: 150%;
     
@@ -462,13 +463,17 @@
     font-size: calc(0.4em + 1vw);
     
 }
-
+.work-btns-box-s {
+  position: absolute;
+  right: 10%;
+}
 .work-btn-s {
     background: transparent;
     border: none;
-    max-width: 5%;
-    margin-right: 15%;
-    margin-bottom: 10%;
+    max-width: 0%;
+    margin-right: 12vw;
+    margin-left: 3vw;
+    
     
 }
 
@@ -477,13 +482,14 @@
   outline: none;
 }
 .work-text-s {
-  padding-top: 3%;
+  margin-left: 30%;
+  margin-top: 8%;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   
-  width: 95%;
-  
-  text-align: right;
-  z-index: 3;
-  position: absolute;
+  position: relative;
 
 }
 
@@ -520,21 +526,18 @@
 }
 
 .more-btn {
-  
   color: white;
   border-radius: 50px;
   background-color: #06c28a;
   box-shadow: 2px 2px 5px rgba(58, 55, 55, 0.507);
   border: 0px solid gray;
-  padding: 1px 10px;
-  -moz-padding:1px 10px;
   height: 6vh;
-  width: auto;
-  margin-top: 8vh;
-  margin-left: 22vw;
-  margin-right: 4vw;
-  font-size: calc(25px + 50%);
-  transition: ease 0.3s all;
+  width: 10vw;
+  margin-top: 50%;
+  
+  
+  font-size: 3vh;
+  transition: ease 0.5s all;
   
 }
 
@@ -691,6 +694,7 @@
     scrollbar-width: thin;
     scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.151);
     line-height: 30px;
+    padding-bottom: 20vh;
     
 }
 
@@ -709,7 +713,8 @@
     text-align: right;
     margin-left: 15%;
     width: 75%;
-    
+    height: auto;
+    position: relative;
     
     font-size: 15px;
     
@@ -726,6 +731,11 @@
 }
 .service-close-btn {    
   margin-top: 9vh;
+}
+.work-text-s {
+  margin-top: 10%;
+  margin-left: 5%;
+  position: relative;
 }
 .work-btn-s {
   
@@ -771,6 +781,7 @@
 }
 .info4-container {
   margin-top: 15%;
+  padding-bottom: 20vh;
   
 }
 .info4-container h1{
