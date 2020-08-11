@@ -735,12 +735,13 @@
   margin-top: 10%;
   margin-left: 5%;
   position: relative;
+  align-items: center;
 }
 .work-btn-s {
   
   display: block !important;
   margin-right: 0vw;
-  margin-left: 20vw;
+  margin-left: 18vw;
   
 }
 
@@ -769,7 +770,7 @@
   transition: ease 0.3s all;
 
  
-  margin-top: 5vh;
+  margin-top: 4vh;
   margin-left: 10vw;
   margin-right: -17vw;
   
