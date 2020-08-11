@@ -271,7 +271,7 @@
     color: rgba(2, 148, 111, 0.849);
     display: block;
     font-weight: bold;
-    font-size: calc(80% + 1.5vw);
+    font-size: calc(80% + 30px);
     margin-bottom: 3vh;
     
 }
@@ -281,7 +281,8 @@
     width: 55%;
     margin-right: 18%;
     display: block;
-    font-size: calc(50% + 1vw);
+    font-size: calc(50% + 20px);
+    
     
     
 }
@@ -360,7 +361,7 @@
     color: rgba(2, 148, 111, 0.849);
     display: block;
     font-weight: bold;
-    font-size: calc(80% + 1.5vw);
+    font-size: calc(80% + 30px);
     
     
 }
@@ -465,8 +466,8 @@
 .work-btn-s {
     background: transparent;
     border: none;
-    max-width: 5vw;
-    margin-right: 15vw;
+    max-width: 5%;
+    margin-right: 15%;
     margin-bottom: 10%;
     
 }
@@ -487,7 +488,7 @@
 }
 
 .work-img-box-s {
-  width: calc(5em + 10vw);
+  width: calc(3em + 10vw);
   height: auto;
   
   
@@ -526,10 +527,10 @@
   box-shadow: 2px 2px 5px rgba(58, 55, 55, 0.507);
   border: 0px solid gray;
   padding: 1px 10px;
- 
+  -moz-padding:1px 10px;
   height: 6vh;
   width: auto;
-  margin-top: 13vh;
+  margin-top: 8vh;
   margin-left: 22vw;
   margin-right: 4vw;
   font-size: calc(25px + 50%);
