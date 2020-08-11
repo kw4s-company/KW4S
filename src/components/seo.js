@@ -19,7 +19,6 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
-            keywords
           }
         }
       }
@@ -39,10 +38,6 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `description`,
           content: metaDescription,
-        },
-        {
-          name: "keywords",
-          content: site.siteMetadata.keywords.join(","),
         },
         {
           property: `og:title`,
@@ -78,7 +73,7 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
-  lang: `ar`,
+  lang: `en`,
   meta: [],
   description: ``,
 }
