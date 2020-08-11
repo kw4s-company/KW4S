@@ -4,9 +4,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `K4WS`,
-    description: `Create the best mobile and web applications`,
-    author: `@gatsbyjs`,
+    title: `شركة خطاب ويب`,
+    description: `شركة خطاب ويب للبرمجيات شركة سعودية رسمية لتصميم و برمجة و تطوير التطبيقات و المواقع الالكترونية تتمتع بامكانيات وخبرات كبيرة نضعها في متناول عملائنا الكرام`,
+    author: `خطاب`,
+    keywords:[" خطاب", "ويب", "تطبيق", "نطبيقات", "مواقع", "مدونة", "حراج", "تصميم", "برمجة", "سعودية", "رسمية", "استضافة", "متاجر", "مساعدة", "صيانة", "اعطال", "تنفيذ", "تطوير", "خدمة", "خدمات"]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -47,8 +48,17 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/logok4ws.png`, // This path is relative to the root of the site.
+        cache_busting_mode: 'none'
       },
     },
+    {
+      resolve: 'gatsby-plugin-offline',
+      options: {
+         workboxConfig: {
+            globPatterns: [`src/images/logok4ws.png`]
+         }
+      }
+   }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
