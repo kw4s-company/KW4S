@@ -41,15 +41,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `K4WS`,
-        short_name: `K4WS`,
+        name: `شركة خطاب`,
+        short_name: `KW4S`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#06c28a`,
+        theme_color: `#06c28a`,
         display: `minimal-ui`,
         icon: `src/images/logok4ws.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-offline`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
