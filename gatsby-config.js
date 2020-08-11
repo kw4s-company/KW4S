@@ -48,17 +48,8 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/logok4ws.png`, // This path is relative to the root of the site.
-        cache_busting_mode: 'none'
       },
     },
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-         workboxConfig: {
-            globPatterns: [`src/images/logok4ws.png`]
-         }
-      }
-   }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
