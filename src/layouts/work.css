@@ -164,12 +164,16 @@
 .filter-btn:hover {
     background-color: rgba(0, 255, 200, 0.89);
     color: white;
+    box-shadow:3px 3px 6px gray;
+    border: 2px double rgb(151, 151, 151) ;
 }
 .filter-btn:active {
     background-color: rgba(27, 175, 138, 0.925);
     color: rgb(228, 226, 226);
     transform: scale(0.9);
     transition: ease 0.2s all;
+    box-shadow: 3px 3px 4px gray;
+    border: 2px double rgb(196, 196, 196) ;
 }
 .filter-btn:target{
     color: red;
