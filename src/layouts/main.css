@@ -58,7 +58,7 @@
 
 .main-text {
     
-    border-top: 1.5px dashed rgb(124, 124, 124);
+    border-top: 2px dashed rgb(95, 94, 94);
     margin-top: -1.5vh;
     background: url("../images/nav01.jpg");
     overflow: hidden;
@@ -345,7 +345,8 @@ footer button:focus {
    
 
     .vertical-dots {
-        top: 16vh;
+        top: 13vh;
+
     }
     .vertical-dots li {
         margin-bottom: 0%;
