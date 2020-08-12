@@ -164,9 +164,6 @@
 .filter-btn:hover {
     background-color: rgba(0, 255, 200, 0.89);
     color: white;
-    -webkit-animation: glow2 1s ease-in-out infinite alternate;
-    -moz-animation: glow2 1s ease-in-out infinite alternate;
-    animation: glow2 1s ease-in-out infinite alternate;
 }
 .filter-btn:active {
     background-color: rgba(27, 175, 138, 0.925);

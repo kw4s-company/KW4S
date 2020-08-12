@@ -287,21 +287,7 @@ h1,h2,h3,h4,h5,h6 {
 }
   
 
-.glow2 {
- 
-    -webkit-animation: glow2 1s ease-in-out infinite alternate;
-    -moz-animation: glow2 1s ease-in-out infinite alternate;
-    animation: glow2 1s ease-in-out infinite alternate;
-  }
-  
-  @keyframes glow2 {
-    from {
-      text-shadow: 0 0 20px rgb(255, 255, 255), 0 0 18px rgb(81, 117, 103), 0 0 25px #a6e2cb, 0 0 33px #a9e7d2, 0 0 40px #60ffaf, 0 0 48px #c6ebde, 0 0 55px #ffffff;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 22px rgb(210, 226, 221), 0 0 24px #00ff9d, 0 0 40px #adddcd, 0 0 45px #96ddce, 0 0 55px #ffffff, 0 0 65px #a9dacf;
-    }
-  }
+
     
   .rotate {
     animation: rotation 2s infinite linear;
