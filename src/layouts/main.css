@@ -58,7 +58,7 @@
 
 .main-text {
     
-    border-top: 2px dashed rgb(95, 94, 94);
+    border-top: 1.5px dashed rgb(124, 124, 124);
     margin-top: -1.5vh;
     background: url("../images/nav01.jpg");
     overflow: hidden;
