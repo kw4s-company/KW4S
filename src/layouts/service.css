@@ -734,19 +734,20 @@
 .work-text-s {
   margin-top: 10%;
   margin-left: 5%;
+  width: 100%;
   position: relative;
   align-items: center;
 }
 .work-btn-s {
   
-  display: block !important;
+  display: inline-block !important;
   margin-right: 0vw;
-  margin-left: 18vw;
+  margin-left: 23vw;
   
 }
 
 .work-img-box-s {
-  width: 25vw;
+  width: 28vw;
   height: auto;
   
   
@@ -771,8 +772,8 @@
 
  
   margin-top: 4vh;
-  margin-left: 10vw;
-  margin-right: -17vw;
+  margin-left: 7vw;
+  margin-right: -23vw;
   
 
 }
