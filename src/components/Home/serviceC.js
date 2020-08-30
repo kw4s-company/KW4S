@@ -242,36 +242,35 @@ export default class serviceC extends Component {
                 </div>
                 <div className="info2-container">
                   <h1>تصميم مواقع الحراج</h1>
-                  <p>
-                      {this.state.webdata[0].node.serviceText1.serviceText1}
-                  </p>
                   {/*work pieces************************************/}
                   <div className="work-text-s">
                  
-                  {/*items */}
-                  <div className="row">
-                    <div>
-                  <AniLink fade to="/work">
-                    <button className="more-btn"><span className=""><FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد </span></button>
-                  </AniLink>
-                    </div>
-                    {this.state.workHarag.map(({node}, i) => {
-                      return(
-                        <button key={node.id} className="col-10 col-md-5 work-btn-s"
-                        onClick={() => this.workBtnHandler({node})}>
-                          <div className="work-img-box-s">
-                            <Img fluid={node.workThumpnail.fluid} className="work-img-s"/>
-                          </div>
-                        </button>
-                        
-                      )
+                 {/*items */}
+                 <div className="row">
+                   <div>
+                 <AniLink fade to="/work">
+                   <button className="more-btn"><span className=""><FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد </span></button>
+                 </AniLink>
+                   </div>
+                   {this.state.workHarag.map(({node}, i) => {
+                     return(
+                       <button key={node.id} className="col-10 col-md-5 work-btn-s"
+                       onClick={() => this.workBtnHandler({node})}>
+                         <div className="work-img-box-s">
+                           <Img fluid={node.workThumpnail.fluid} className="work-img-s"/>
+                         </div>
+                       </button> 
+                     )
+                   })}
+                 </div>
+               </div>
+               {/*end of work pieces************************************/}
 
-                    })}
-                  </div>
-
-                
-                </div>
-                    <div className="padding-filler"></div>
+                  <p>
+                      {this.state.webdata[0].node.serviceText1.serviceText1}
+                  </p>
+           
+                   
               
                 </div>
               </div>
@@ -289,35 +288,38 @@ export default class serviceC extends Component {
                 </div>
                 <div className="info2-container">
                   <h1>تصميم المتاجر الإلكترونية</h1>
-                  <p>
-                  {this.state.webdata[0].node.serviceText2.serviceText2}
-                  </p>
                   {/*work pieces************************************/}
                   <div className="work-text-s">
                  
-                  {/*items */}
-                  <div className="row">
-                    <div>
-                  <AniLink fade to="/work">
-                    <button className="more-btn"><span className=""> <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
-                  </AniLink>
-                    </div>
-                    {this.state.workEcom.map(({node}, i) => {
-                      return(
-                        <button key={node.id} className="col-10 col-md-5 work-btn-s"
-                        onClick={() => this.workBtnHandler({node})}>
-                          <div className="work-img-box-s">
-                            <Img fluid={node.workThumpnail.fluid} className="work-img-s"/>
-                          </div>
-                        </button>
-                        
-                      )
+                 {/*items */}
+                 <div className="row">
+                   <div>
+                 <AniLink fade to="/work">
+                   <button className="more-btn"><span className=""> <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
+                 </AniLink>
+                   </div>
+                   {this.state.workEcom.map(({node}, i) => {
+                     return(
+                       <button key={node.id} className="col-10 col-md-5 work-btn-s"
+                       onClick={() => this.workBtnHandler({node})}>
+                         <div className="work-img-box-s">
+                           <Img fluid={node.workThumpnail.fluid} className="work-img-s"/>
+                         </div>
+                       </button>
+                       
+                     )
 
-                    })}
-                  </div>
+                   })}
+                 </div>
 
-                
-                </div>
+               
+               </div>
+               {/*end of work pieces************************************/}
+
+                  <p>
+                  {this.state.webdata[0].node.serviceText2.serviceText2}
+                  </p>
+             
                 
                 </div>
               </div>
@@ -335,10 +337,7 @@ export default class serviceC extends Component {
                 </div>
                 <div className="info2-container">
                   <h1>تصميم تطبيقات الجوال</h1>
-                  <p>
-                  {this.state.webdata[0].node.serviceText3.serviceText3}
-                  </p>
-                 {/*work pieces************************************/}
+                  {/*work pieces************************************/}
                  <div className="work-text-s">
                  
                  {/*items */}
@@ -364,7 +363,11 @@ export default class serviceC extends Component {
 
                
                </div>
-               <div className="padding-filler"></div>
+               {/*end of work pieces************************************/}
+                  <p>
+                  {this.state.webdata[0].node.serviceText3.serviceText3}
+                  </p>
+               
                 </div>
               </div>
             </div>
@@ -377,23 +380,25 @@ export default class serviceC extends Component {
                   </button>
                 </div>
                 <div className="service-info-bg">
-                  <img src={info4BG} alt="Info Background4" className="info4-img"/>
+                  
                   <img src={infoBG0} alt="Info Background3" className="info4-img-m"/>
                 </div>
-                <div className="info4-container">
+                <div className="info2-container">
                   <h1>إستضافة مواقع</h1>
                   <p>
                   {this.state.webdata[0].node.serviceText41.serviceText41}
                   </p>
+                  {/*}
                   <p>
                   {this.state.webdata[0].node.serviceText42.serviceText42}
                   </p>
+                  */}
                   <div className="btn-estdafa">
                     <AniLink fade to="/contact">
                      <button > اطلب الان</button>
                     </AniLink>
                     </div>
-                  <div className="padding-filler"></div>
+                  
                 </div>
                 
               </div>
@@ -411,10 +416,7 @@ export default class serviceC extends Component {
                 </div>
                 <div className="info2-container">
                   <h1>تصميم مدونة الكترونية</h1>
-                  <p>
-                  {this.state.webdata[0].node.serviceText5.serviceText5}
-                  </p>
-                 {/*work pieces************************************/}
+                  {/*work pieces************************************/}
                  <div className="work-text-s">
                  
                  {/*items */}
@@ -440,7 +442,11 @@ export default class serviceC extends Component {
 
                
                </div>
-               <div className="padding-filler"></div>
+                {/*end of work pieces************************************/}
+                  <p>
+                  {this.state.webdata[0].node.serviceText5.serviceText5}
+                  </p>
+               
                 </div>
               </div>
             </div>
@@ -459,10 +465,7 @@ export default class serviceC extends Component {
                 </div>
                 <div className="info2-container">
                   <h1> تصميم مواقع إلكترونية</h1>
-                  <p>
-                  {this.state.webdata[0].node.serviceText6.serviceText6}
-                  </p>
-               {/*work pieces************************************/}
+                 {/*work pieces************************************/}
                <div className="work-text-s">
                  
                  {/*items */}
@@ -488,7 +491,12 @@ export default class serviceC extends Component {
 
                
                </div>
-               <div className="padding-filler"></div>
+                {/*end of work pieces************************************/}
+                  <p>
+                  {this.state.webdata[0].node.serviceText6.serviceText6}
+                  </p>
+        
+               
                 </div>
               </div>
             </div>
