@@ -120,13 +120,18 @@ export default class main extends Component {
               <p>
               {this.state.webdata[0].node.mainText1.mainText1}
               </p>
+              <AniLink fade to="/about">
+              <button className="green-btn know-more">
+                اعرف المزيد
+              </button>
+              </AniLink>
               </div>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#06c28a" fill-opacity="1" d="M0,128L48,112C96,96,192,64,288,48C384,32,480,32,576,69.3C672,107,768,181,864,197.3C960,213,1056,171,1152,138.7C1248,107,1344,85,1392,74.7L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
               <div className="main-text2">
               <div className="row">
                 <ul>
-                <li><AniLink fade to="/contact"><button className="main-btn1 ">أطلب الأن</button></AniLink></li>
-                <li><AniLink fade to="/service"><button className="main-btn1"> تصفح الخدمات</button></AniLink></li>
+                <li><AniLink fade to="/contact"><button className="main-btn1 gray-btn">أطلب الأن</button></AniLink></li>
+                <li><AniLink fade to="/service"><button className="main-btn1 gray-btn"> تصفح الخدمات</button></AniLink></li>
                 </ul>
                 <p>{this.state.webdata[0].node.mainText2.mainText2}</p>
               </div>
@@ -137,8 +142,8 @@ export default class main extends Component {
               <div className="row">
               <p>{this.state.webdata[0].node.mainText3.mainText3}</p>
                 <ul>
-                <li><AniLink fade to="/contact"><button className="main-btn2">أطلب الأن</button></AniLink></li>
-                <li><AniLink fade to="/work"><button className="main-btn2"> تصفح الأعمال</button></AniLink></li>
+                <li><AniLink fade to="/contact"><button className="main-btn2 green-btn">أطلب الأن</button></AniLink></li>
+                <li><AniLink fade to="/work"><button className="main-btn2 green-btn"> تصفح الأعمال</button></AniLink></li>
                 </ul>
               <h1>BY M.ADEL</h1>
               </div>

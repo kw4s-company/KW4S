@@ -250,8 +250,8 @@
 
 .info2-container {
     
-    
-    margin-top: 7%;
+    border-top: 2px solid rgb(171, 196, 184);
+    margin-top: 2%;
     position: absolute;
     height: 99%;
     width: 100%;
@@ -264,15 +264,25 @@
     scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.137);
     
 }
+.info2-outer {
+    margin-top: 7%;
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    overflow: hidden;
+    text-align: right;
+    z-index: 21;
 
-.info2-container h1{
-    margin-top: 0%;
+}
+
+.info-header{
+    
     margin-right: 18%;
     color: rgba(2, 148, 111, 0.849);
     display: block;
     font-weight: bold;
     font-size: calc(80% + 3vh);
-    margin-bottom: 1vh;
+    
     
 }
 .info2-container p {
@@ -283,6 +293,7 @@
     margin-right: 18%;
     display: block;
     font-size: calc(40% + 2vh);
+    line-height: 1.8em;
     
     
     
@@ -471,8 +482,8 @@
     background: transparent;
     border: none;
     max-width: 0%;
-    margin-right: 12vw;
-    margin-left: 3vw;
+    margin-right: 20vh;
+    margin-left: 4em;
     
     
 }
@@ -482,7 +493,7 @@
   outline: none;
 }
 .work-text-s {
-  margin-left: 30em;
+  margin-left: 30%;
   margin-top: 3%;
   margin-bottom: 3%;
   width: 60%;
@@ -526,35 +537,16 @@
 }
 
 .more-btn {
-  color: white;
-  border-radius: 50px;
-  background-color: #06c28a;
-  box-shadow: 2px 2px 5px rgba(58, 55, 55, 0.507);
   border: 0px solid gray;
   height: 6vh;
   width: 10vw;
   margin-top: 50%;
-  
-  
   font-size: 3vh;
   transition: ease 0.5s all;
   
 }
 
-.more-btn:focus {
-  outline: none;
-}
-.more-btn:hover {
-  transform: scale(1.1);
-  background-color: rgba(31, 218, 171, 0.507);
-  
-}
-.more-btn:active {
-  transform: scale(1);
-  background-color: rgb(36, 204, 162);
-  box-shadow:inset 0.14em 0.14em 0.24em rgba(3, 3, 0.3, 0.29) ;
 
-}
 .more-btn .arrow-left {
   font-size: calc(30px + 60%);
 }
@@ -571,39 +563,11 @@
 .btn-estdafa button {
   height: calc(1vh + 1.5em + 5px);
   width: calc(7vh + 5em);
-  
-  
-  padding: 3px 10px 3px 5px;
   position: relative;
   font-size: calc(0.5em + 0.8vw + 3px);
-  background-color: #06c28a;
-  
-  color: white;
-  box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
-  
   border: 1px solid gray;
-  border-radius: 50px;
-  cursor: pointer;
 }
-.btn-estdafa button:hover {
-  background-color: rgba(31, 218, 171, 0.507);
-  color: white;
-  transform: scale(1.1);
-  transition: ease 0.3s all;
-  
-}
-.btn-estdafa button:active {
-  background-color: rgb(36, 204, 162);
-  color: rgb(218, 211, 211);
-  box-shadow:inset 0.14em 0.14em 0.24em rgba(3, 3, 0.3, 0.29) ;
-  transition: ease 0.2s all;
-  margin-left: 59%;
-  transform: scale(1);
-}
-.btn-estdafa button:focus {
-    outline: none;
-    outline-style: none;
-}
+
 
 
 /************** MOBILE VIEW *****************/
@@ -681,7 +645,7 @@
   .info2-container {
     
     
-    margin-top: 15%;
+    margin-top: 5%;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -692,24 +656,26 @@
     scrollbar-width: thin;
     scrollbar-color: rgba(21, 192, 149, 0.568) rgba(11, 204, 140, 0.151);
     line-height: 30px;
+    border-top: 2px solid rgb(206, 206, 206);
     padding-bottom: 20vh;
     
 }
 
 
-.info2-container h1{
-    margin-top: 4%;
-    margin-right: 10%;
+.info-header{
+    margin-top: 12%;
+    margin-right: 15%;
     color: rgba(2, 148, 111, 0.849);
     display: block;
     font-weight: bold;
     font-size: 24px;
+    margin-bottom: 0;
     
     
 }
 .info2-container p {
     text-align: right;
-    margin-left: 15%;
+    margin-left: 8%;
     width: 75%;
     height: auto;
     position: relative;
@@ -753,7 +719,9 @@
   object-fit: contain;
 }
 
-
+.btn-info-on {
+  margin-left: 3vw;
+}
 
 .more-btn {
    
@@ -839,6 +807,7 @@
 
 .service-info-bg img {
   opacity: 1;
+  
 }
 
 .service-close-btn button {

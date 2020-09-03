@@ -40,20 +40,49 @@
 }
 
 .about-img {
+    overflow: hidden;
     width: 50%;
     margin-left: 35%;
     height: auto;
     position: relative;
     margin-right: 0;
+    border-radius: 10px;
+    transition: all 1s ease !important;
+    z-index: 50;
+    box-shadow: -2px 2px 5px rgba(3, 3, 0.3, 0.29);
+    border: 0px solid rgb(97, 97, 97);
+    
 }
+.about-img:hover {
+    cursor:pointer;
+    margin-left: 23%;
+    transform: scale(1.5);
+    border: 1px solid rgb(22, 133, 86);
+    box-shadow: -15px 20px 20px rgba(0, 3, 2, 0.29);
+    
+}
+
 .about-img img {
     width: unset;
     height: unset;
     position:relative;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 10px;
     filter: brightness(50%);
+    transition: all 2s ease !important;
+    border-radius: 10px;
+    
+    
+}
+.about-img img:hover {
+    transform: scale(1.05);
+    filter: brightness(90%);
+    transition:all 2s ease !important;
+    
+}
+.about-img img:active {
+    transform: scale(1);
+    transition:all 0.5s ease !important;
 }
 
 .about-img-m {
@@ -62,9 +91,13 @@
     height: auto;
     position: relative;
     margin-right: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    
     
     
 }
+
 .about-img-m img {
     border-radius: 10px;
     filter: brightness(50%);
@@ -73,6 +106,17 @@
     position:relative;
     max-width: 100%;
     max-height: 100%;
+    transition: all 1s ease !important;
+}
+.about-img-m img:hover {
+    transform: scale(1.1);
+    filter: brightness(90%);
+    
+}
+.about-img-m img:active {
+    transform: scale(1);
+    filter: brightness(50%);
+    
 }
 
 

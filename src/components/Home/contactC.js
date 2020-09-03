@@ -70,25 +70,26 @@ export default class contactC extends Component {
                 <img src={contactBG} alt="Contact Background" className="contact-bg"/>
                 <img src={contactBGm} alt="Contact Background" className="contact-bg-m"/>
 
+                <div className="contact-outer">
+                <h1 className="contact-header">اتصل بنا</h1>
                 <div className="contact-text fadeinn">
-                  <h1>اتصل بنا</h1>
                     <div className="phone-box">
                       <button className="">
-                      
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <a href={"tel:" + this.state.webdata[0].node.phone}>{this.state.webdata[0].node.phone} </a>
-                      : <MdPhoneIphone />
+                      &nbsp;&nbsp;&nbsp; : <MdPhoneIphone />
                       </button>
 
                       <button className="">
-                       
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <a href={"mailto:" + this.state.webdata[0].node.gmail}>{this.state.webdata[0].node.gmail}</a>
-                        : <FaGoogle style={{color: "#ea4335"}}/>
+                        &nbsp;&nbsp;&nbsp; : <FaGoogle style={{color: "#ea4335"}} />
                       </button>
                     
                       <button className="">
                       
                       <a href={"https://www." + this.state.webdata[0].node.facebook}>{this.state.webdata[0].node.facebook}</a>
-                      : <FaFacebook style={{color: "#1877f2"}}/>
+                      &nbsp;&nbsp;&nbsp; : <FaFacebook style={{color: "#1877f2"}}/>
                       </button>
                     </div>
 
@@ -123,11 +124,12 @@ export default class contactC extends Component {
                       
                       required></textarea>
                     
-                    <input type="submit" value="إرسال"/>
+                    <input type="submit" value="إرسال" className="green-btn"/>
                     
                   </form>
                   <div className="padding-filler"></div>
  
+                </div>
                 </div>
                 <div className={this.state.mapSwitch}>
                   <WrappedMap

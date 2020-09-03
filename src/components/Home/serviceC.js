@@ -3,7 +3,7 @@ import serviceBG from "../../images/service02.jpg"
 import serviceBGm from "../../images/work-info-m.jpg"
 import infoBG0 from "../../images/work01.jpg"
 //import infoBG1 from "../../images/btn101.jpg"
-import info4BG from "../../images/btn401.jpg"
+//import info4BG from "../../images/btn401.jpg"
 //import info5BG from "../../images/btn501.jpg"
 import klogo from "../../images/logo-k4ws.png"
 import { FaBars, FaTimes, FaMapMarkerAlt, FaArrowCircleLeft } from "react-icons/fa"
@@ -240,8 +240,10 @@ export default class serviceC extends Component {
                 <div className="service-info-bg">
                   <img src={infoBG0} alt="Info Backgroud2"/>
                 </div>
+                <div className="info2-outer">
+                <h1 className="info-header">تصميم مواقع الحراج</h1>
                 <div className="info2-container">
-                  <h1>تصميم مواقع الحراج</h1>
+                  
                   {/*work pieces************************************/}
                   <div className="work-text-s">
                  
@@ -249,7 +251,7 @@ export default class serviceC extends Component {
                  <div className="row">
                    <div>
                  <AniLink fade to="/work">
-                   <button className="more-btn"><span className=""><FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد </span></button>
+                   <button className="more-btn green-btn"><span className=""><FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد </span></button>
                  </AniLink>
                    </div>
                    {this.state.workHarag.map(({node}, i) => {
@@ -273,6 +275,7 @@ export default class serviceC extends Component {
                    
               
                 </div>
+                </div>
               </div>
             </div>
             {/* ------------------------BUTTON 2 تصميم وبرمجة المتاجر الإلكترونية------------------- */}
@@ -286,8 +289,10 @@ export default class serviceC extends Component {
                 <div className="service-info-bg">
                   <img src={infoBG0} alt="Info Backgroud2"/>
                 </div>
+                <div className="info2-outer">
+                <h1 className="info-header">تصميم المتاجر الإلكترونية</h1>
                 <div className="info2-container">
-                  <h1>تصميم المتاجر الإلكترونية</h1>
+                  
                   {/*work pieces************************************/}
                   <div className="work-text-s">
                  
@@ -295,7 +300,7 @@ export default class serviceC extends Component {
                  <div className="row">
                    <div>
                  <AniLink fade to="/work">
-                   <button className="more-btn"><span className=""> <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
+                   <button className="more-btn green-btn"><span className=""> <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
                  </AniLink>
                    </div>
                    {this.state.workEcom.map(({node}, i) => {
@@ -322,6 +327,7 @@ export default class serviceC extends Component {
              
                 
                 </div>
+                </div>
               </div>
             </div>
             {/* ------------------------BUTTON 3 تصميم كافة تطبيقات الجوال------------------- */}
@@ -335,8 +341,10 @@ export default class serviceC extends Component {
                 <div className="service-info-bg">
                   <img src={infoBG0} alt="Info Background3"/>
                 </div>
+                <div className="info2-outer">
+                <h1 className="info-header">تصميم تطبيقات الجوال</h1>
                 <div className="info2-container">
-                  <h1>تصميم تطبيقات الجوال</h1>
+                  
                   {/*work pieces************************************/}
                  <div className="work-text-s">
                  
@@ -344,7 +352,7 @@ export default class serviceC extends Component {
                  <div className="row">
                    <div>
                  <AniLink fade to="/work">
-                   <button className="more-btn"><span className="">  <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
+                   <button className="more-btn green-btn"><span className="">  <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
                  </AniLink>
                    </div>
                    {this.state.workApp.map(({node}, i) => {
@@ -369,6 +377,7 @@ export default class serviceC extends Component {
                   </p>
                
                 </div>
+                </div>
               </div>
             </div>
             {/* ------------------------BUTTON 4  اســـــــــــــــــــــــــــــــتضافة -------------*/}
@@ -383,8 +392,10 @@ export default class serviceC extends Component {
                   
                   <img src={infoBG0} alt="Info Background3" className="info4-img-m"/>
                 </div>
+                <div className="info2-outer">
+                <h1 className="info-header">إستضافة مواقع</h1>
                 <div className="info2-container">
-                  <h1>إستضافة مواقع</h1>
+                  
                   <p>
                   {this.state.webdata[0].node.serviceText41.serviceText41}
                   </p>
@@ -395,12 +406,12 @@ export default class serviceC extends Component {
                   */}
                   <div className="btn-estdafa">
                     <AniLink fade to="/contact">
-                     <button > اطلب الان</button>
+                     <button className="green-btn"> اطلب الان</button>
                     </AniLink>
                     </div>
                   
                 </div>
-                
+                </div>
               </div>
             </div>
             {/* ------------------------BUTTON 5 تصميم مدونة الكترونية */}
@@ -414,8 +425,10 @@ export default class serviceC extends Component {
                 <div className="service-info-bg">
                   <img src={infoBG0} alt="Info Background3"/>
                 </div>
+                <div className="info2-outer">
+                <h1 className="info-header">تصميم مدونة الكترونية</h1>
                 <div className="info2-container">
-                  <h1>تصميم مدونة الكترونية</h1>
+                  
                   {/*work pieces************************************/}
                  <div className="work-text-s">
                  
@@ -423,7 +436,7 @@ export default class serviceC extends Component {
                  <div className="row">
                    <div>
                  <AniLink fade to="/work">
-                   <button className="more-btn"><span className=""> <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
+                   <button className="more-btn green-btn"><span className=""> <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
                  </AniLink>
                    </div>
                    {this.state.workBlog.map(({node}, i) => {
@@ -448,6 +461,7 @@ export default class serviceC extends Component {
                   </p>
                
                 </div>
+                </div>
               </div>
             </div>
             
@@ -463,8 +477,10 @@ export default class serviceC extends Component {
                 <div className="service-info-bg">
                   <img src={infoBG0} alt="Info Background6"/>
                 </div>
+                <div className="info2-outer">
+                <h1 className="info-header"> تصميم مواقع إلكترونية</h1>
                 <div className="info2-container">
-                  <h1> تصميم مواقع إلكترونية</h1>
+                  
                  {/*work pieces************************************/}
                <div className="work-text-s">
                  
@@ -472,7 +488,7 @@ export default class serviceC extends Component {
                  <div className="row">
                    <div>
                  <AniLink fade to="/work">
-                   <button className="more-btn"><span className=""> <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
+                   <button className="more-btn green-btn"><span className=""> <FaArrowCircleLeft className="arrow-left"/> &nbsp;&nbsp;المزيــد  </span></button>
                  </AniLink>
                    </div>
                    {this.state.workWeb.map(({node}, i) => {
@@ -497,6 +513,7 @@ export default class serviceC extends Component {
                   </p>
         
                
+                </div>
                 </div>
               </div>
             </div>
