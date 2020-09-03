@@ -73,11 +73,8 @@ export const query = graphql`
         serviceText3{
           serviceText3
         }
-        serviceText41{
-          serviceText41
-        }
-        serviceText42{
-          serviceText42
+        serviceText4{
+          serviceText4
         }
         serviceText5{
           serviceText5

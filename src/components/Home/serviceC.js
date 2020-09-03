@@ -397,7 +397,7 @@ export default class serviceC extends Component {
                 <div className="info2-container">
                   
                   <p>
-                  {this.state.webdata[0].node.serviceText41.serviceText41}
+                  {this.state.webdata[0].node.serviceText4.serviceText4}
                   </p>
                   {/*}
                   <p>

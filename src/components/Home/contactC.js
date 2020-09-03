@@ -127,7 +127,7 @@ export default class contactC extends Component {
                     <input type="submit" value="إرسال" className="green-btn"/>
                     
                   </form>
-                  <div className="padding-filler"></div>
+                  
  
                 </div>
                 </div>

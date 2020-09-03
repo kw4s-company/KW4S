@@ -73,10 +73,9 @@ export default class aboutC extends Component {
             <div>
               <div className="hero-bg">
                 <img src={aboutBG} alt="About Backgroud"/>
-
+                <div className="about-outer">
+                  <h1 className="about-header">من نحن</h1>
                 <div className="about-text fadeinn">
-                  <h1>من نحن</h1>
-
                   <p className="about-text-p1">
                     {this.state.webdata[0].node.aboutText1.aboutText1}
                   </p>
@@ -89,7 +88,8 @@ export default class aboutC extends Component {
                   <p className="about-text-p2">
                      {this.state.webdata[0].node.aboutText2.aboutText2}
                   </p>
-                  <div className="padding-filler"></div>
+                  
+                </div>
                 </div>
                 <div className={this.state.mapSwitch}>
                   <WrappedMap

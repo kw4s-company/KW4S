@@ -554,7 +554,7 @@
 .btn-estdafa {
   margin-right: 35%;
  margin-top: -12vh;
- margin-bottom: 10vh;
+ margin-bottom: 20vh;
  font-size: 18px;
  position: relative;
   
@@ -706,8 +706,8 @@
 .work-btn-s {
   
   display: inline-block !important;
-  margin-right: 0vw;
-  margin-left: 23vw;
+  margin-right: 8vw;
+  margin-left: 15vw;
   
 }
 
@@ -739,8 +739,8 @@
 
  
   margin-top: 4vh;
-  margin-left: 1vw;
-  margin-right: -23vw;
+  margin-left: 0vw;
+  margin-right: -15vw;
   
 
 }
