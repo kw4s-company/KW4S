@@ -254,7 +254,7 @@
 
 .work-info-text-box {
     
-    top: calc(1em + 2vh);
+    top: 0%;
     right: 5%;
     width: 40%;
     text-align: right;
@@ -266,7 +266,7 @@
 .work-info-logo {
     top: 0%;
     margin-top: 0;
-    margin-left: 4%;
+    margin-left: 2%;
     width: calc(2em + 3vw);
     height: auto;
     text-align: right;
@@ -282,7 +282,7 @@
 }
 
 .work-info-p1box {
-    margin-top: 5%;
+    margin-top: 1%;
     margin-right: 0;
     min-height: 10vh;
     width: 80%;
@@ -440,6 +440,10 @@
     .web-box .web-btn-m {
         display:none;
     }
+    .work-info-logo-m {
+        display: none;
+    }
+
 }
 
 @media  (orientation: portrait), (max-width: 500px) {
@@ -517,14 +521,14 @@
     .info-bg1 {
         display: none;
     }
-    .work-info-logo {
-        position: absolute;
-        top:29vh;
-        left: 78%;
-        width: 10vw;
-    }
     .work-info-logo-m {
-       position: absolute;
+        position: relative;
+        top:2vh;
+        left: 45%;
+        width: 13vw;
+    }
+    .work-info-logo {
+       display: none;
     }
     .work-info-container {
         padding-right: 5%;
@@ -549,7 +553,7 @@
         position: relative;
     }
     .work-info-p1box {
-        margin-top: 5vh;
+        margin-top: 3vh;
         margin-right: 0;
         min-height: 10vh;
         width: 100%;

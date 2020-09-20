@@ -242,6 +242,9 @@ export default class aboutC extends Component {
                   
                   <div className={this.state.infoTextBoxCss}>
                     <div className="row">
+                    <div className="work-info-logo-m">
+                    <Img fluid={this.state.currentNode?.workLogo?.fluid == null ? "s" : this.state.currentNode.workLogo.fluid} className=""/>
+                    </div>
                     <div className="work-info-p1box">
                     <p key={this.state.currentNode?.id} className="">{this.state.currentNode?.workText1?.workText1}</p>
                     </div>
