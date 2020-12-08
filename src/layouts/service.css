@@ -516,6 +516,7 @@
   max-height: 100%;
   opacity: 0.9;
   transition: ease 0.5s all;
+  filter: brightness(85%);
   
   
 }
@@ -523,6 +524,7 @@
   transform: scale(1.2);
   opacity: 1;
   transition: all 0.5s ease;
+  filter: brightness(100%);
 
 }
 .work-img-s:active {
@@ -709,6 +711,9 @@
   margin-right: 8vw;
   margin-left: 15vw;
   
+}
+.work-img-s {
+  filter: brightness(100%);
 }
 
 .work-img-box-s {

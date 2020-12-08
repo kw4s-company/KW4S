@@ -49,12 +49,12 @@ export default class serviceC extends Component {
       webdata:props.webdata.edges,
       //----work pieces---------------------------
       items:props.items.edges,
-      workItems: Array.from(props.items.edges ).filter(e => e.node.category ==='تطبيقات').reverse().slice(0,2),
-      workApp: Array.from(props.items.edges ).filter(e => e.node.category ==='تطبيقات').slice(0,2),
-      workWeb: Array.from(props.items.edges ).filter(e => e.node.category ==='مواقع').slice(0,2),
+      workItems: Array.from(props.items.edges ).filter(e => e.node.category ===' تطبيقات الجوال').reverse().slice(0,2),
+      workApp: Array.from(props.items.edges ).filter(e => e.node.category ==='تطبيقات الجوال').slice(0,2),
+      workWeb: Array.from(props.items.edges ).filter(e => e.node.category ==='مواقع إلكترونية').slice(0,2),
       workBlog: Array.from(props.items.edges ).filter(e => e.node.category ==='مدونات').slice(0,2),
-      workEcom: Array.from(props.items.edges ).filter(e => e.node.category ==='متاجر').slice(0,2),
-      workHarag: Array.from(props.items.edges ).filter(e => e.node.category ==='حراج').slice(0,2),
+      workEcom: Array.from(props.items.edges ).filter(e => e.node.category ==='متاجر إلكترونية').slice(0,2),
+      workHarag: Array.from(props.items.edges ).filter(e => e.node.category ==='مواقع الحراج').slice(0,2),
       
       workBtnsCss:"work-text in",
       workHeroSwitch:"show-content",
@@ -598,7 +598,7 @@ export default class serviceC extends Component {
             
                   {/*<Img fluid={this.state.currentNode.image.fluid} className="work-info-image"/>*/}
                   </div>
-                  {appcheck === 'تطبيقات' ? (
+                  {appcheck === 'تطبيقات الجوال' ? (
                       <div className="app-box">
                         <a href={this.state.currentNode?.googlePlayLink}>
                         <button className="app-btn"><div><img src={gplay} alt=""/></div></button>

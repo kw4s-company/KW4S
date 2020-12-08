@@ -46,8 +46,8 @@
     max-width: 100%;
     max-height: 100%;
     
-    filter: brightness(90%);
-    transition: ease 0.5s all;
+    filter: brightness(85%);
+    transition: ease 0.8s all;
     
     
 }
@@ -157,7 +157,7 @@
     border-radius: 10px;
     margin-right: 0vw;
     margin-left: 1vw;
-    
+    transition:all 0.5s ease;
     box-shadow:inset 3px 3px 6px gray;
     
 }
@@ -166,6 +166,7 @@
     color: white;
     box-shadow:3px 3px 6px gray;
     border: 2px double rgb(151, 151, 151) ;
+    transition:all 0.3s ease;
 }
 .filter-btn:active {
     background-color: rgba(27, 175, 138, 0.925);
@@ -265,24 +266,32 @@
 
 .work-info-logo {
     top: 0%;
-    margin-top: 0;
+    margin-top: 2.5%;
     margin-left: 2%;
     width: calc(2em + 3vw);
     height: auto;
+    max-height: 5vh;
     text-align: right;
     z-index: 7;
     position: relative;
     display: inline-block;
     object-fit: contain;
+    transition: all 0.5s ease;
+}
+.work-info-logo:hover {
+    transform: scale(1.2);
+    margin-top: 4%;
+    margin-left: 3%;
 }
 
 .work-info-logo img {
     max-width: 100%;
     max-height: 100%;
+    border-radius: 10px;
 }
 
 .work-info-p1box {
-    margin-top: 1%;
+    margin-top: 0%;
     margin-right: 0;
     min-height: 10vh;
     width: 80%;
@@ -298,7 +307,7 @@
 }
 .work-info-p2box {
     display: block;
-    margin-top: 2%;
+    margin-top: 0%;
 }
 
 .work-info-p2box p {
@@ -354,7 +363,7 @@
     background: radial-gradient(rgba(255, 255, 255, 0.062) 50%,rgba(124, 121, 121, 0.192) 80%);
     color: rgb(29, 190, 169);
     box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
-    
+    transition: ease 0.5s all;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -362,7 +371,7 @@
   .order-now-btn:hover {
     background-color: rgba(31, 218, 171, 0.507);
     color: white;
-    transition: ease 0.3s all;
+    
     
   }
   .order-now-btn:active {
@@ -383,6 +392,7 @@
 .app-box{
     margin-right: 12%;
     margin-top: 30%;
+    z-index: 99;
 }
 .app-btn {
     background-color: transparent;
@@ -525,7 +535,20 @@
         position: relative;
         top:2vh;
         left: 45%;
-        width: 13vw;
+        width: 18vw;
+        transition: all 0.5s ease;
+        
+    }
+    .work-info-logo-m:hover {
+        transform: scale(2);
+        top:7vh;
+    }
+    .work-info-logo-m:active {
+        transform: scale(0.7);
+        top: 2vh;
+    }
+    .work-info-logo-m img {
+        border-radius: 10px;
     }
     .work-info-logo {
        display: none;
@@ -598,7 +621,7 @@
     .order-box {
         position: absolute;
         margin-left: 72%;
-        margin-top: 40%;
+        margin-top: 25%;
     }
     
     .order-now-btn {
@@ -623,7 +646,7 @@
 
       .app-box{
         margin-right: 0%;
-        top: 25vh;
+        top: 20vh;
         left: 70%;
         width: 30%;
         margin-top: 0%;
@@ -675,7 +698,7 @@
         margin-right: 0% !important;
         margin-top: 0% !important;
         left: 68.5%;
-        top: 25vh;
+        top: 17vh;
         
         
         
@@ -696,7 +719,7 @@
         padding: 3px 10px 3px 5px;
         
         font-weight: bold;
-        background:rgb(239, 240, 239);
+        background:rgba(239, 240, 239, 0.932);
         color: rgb(29, 190, 169);
         box-shadow:0.2em 0.2em 0.3em rgba(3, 3, 0.3, 0.29) ;
         border: none;

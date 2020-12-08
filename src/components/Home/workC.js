@@ -282,7 +282,7 @@ export default class aboutC extends Component {
                   {/*<Img fluid={this.state.currentNode.image.fluid} className="work-info-image"/>*/}
                   </div>
                   
-                  {appcheck === 'تطبيقات' ? (
+                  {appcheck === 'تطبيقات الجوال' ? (
                       <div className="app-box">
                         <a href={this.state.currentNode?.googlePlayLink}>
                         <button className="app-btn"><div><img src={gplay} alt=""/></div></button>
